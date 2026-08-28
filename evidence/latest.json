@@ -5,7 +5,8 @@
   "game": "影之诗：超凡世界",
   "environment": "第9弹卡包「复苏的阿兹弗特」上线第2天",
   "collection_parameters": {
-    "bilibili_since": "2026-08-27T00:00:00+08:00"
+    "bilibili_since": "2026-08-27T00:00:00+08:00",
+    "x_since": "2026-08-27T00:00:00+08:00"
   },
   "public_url": "https://ayoo-yu.github.io/shadowverse-worlds-beyond-daily/",
   "feedback_url": "https://github.com/Ayoo-Yu/shadowverse-worlds-beyond-daily/issues/new?template=matchup-feedback.yml",
@@ -156,7 +157,7 @@
         "checked_at": "2026-08-28T12:55:00+08:00",
         "method": "public_index_review",
         "evidence_url": "https://search.yahoo.co.jp/realtime",
-        "error": "本轮使用公开索引与原帖回链，未执行官方X Recent Search，覆盖不完整。"
+        "error": "本轮使用公开索引与原帖回链；本机未配置X_BEARER_TOKEN，官方X Recent Search未执行，覆盖不完整。"
       },
       {
         "id": "x_recent_global",
@@ -164,13 +165,13 @@
         "checked_at": "2026-08-28T12:55:00+08:00",
         "method": "public_index_review",
         "evidence_url": "https://search.yahoo.co.jp/realtime",
-        "error": "本轮使用公开索引与原帖回链，未执行官方X Recent Search，覆盖不完整。"
+        "error": "本轮使用公开索引与原帖回链；本机未配置X_BEARER_TOKEN，官方X Recent Search未执行，覆盖不完整。"
       },
       {
         "id": "x_seed_accounts",
         "status": "not_run",
         "method": "not_run",
-        "error": "本轮没有逐账号核验sources.json中的全部X固定及动态账号。"
+        "error": "本机未配置X_BEARER_TOKEN，本轮无法对sources.json中的全部X固定及动态账号执行官方联合from:查询。"
       },
       {
         "id": "x_index_shadolabo",
