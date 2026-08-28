@@ -1,16 +1,16 @@
 {
   "schema_version": 2,
   "report_date": "2026-08-28",
-  "generated_at": "2026-08-28T13:30:00+08:00",
+  "generated_at": "2026-08-28T14:40:00+08:00",
   "game": "影之诗：超凡世界",
   "environment": "第9弹卡包「复苏的阿兹弗特」上线第2天",
   "public_url": "https://ayoo-yu.github.io/shadowverse-worlds-beyond-daily/",
   "feedback_url": "https://github.com/Ayoo-Yu/shadowverse-worlds-beyond-daily/issues/new?template=matchup-feedback.yml",
   "decision_policy": {
-    "play_now": "具体40张构筑可复制，至少2个独立玩家给出强度信号，目标卡组已出现至少2个独立扩散信号，并且同一构筑范围内至少2个独立对局方向证据；若只有玩家自述而无成规模战绩，最高只能给B级。",
+    "play_now": "具体40张构筑可复制，至少2个独立玩家给出强度信号，目标卡组已出现至少2个独立B站扩散信号，并且同一构筑范围内至少2个独立对局方向证据；若只有玩家自述而无成规模战绩，最高只能给B级。",
     "test_first": "具体构筑和强度成立，但扩散、克制或构筑范围仍有一环未闭合。",
-    "watch_or_avoid": "卡组强度可见，但已被内容端放大、已有多条被针对证据，或无法把克制说法映射到当前具体40张。",
-    "prohibition": "连胜帖数量不是胜率；同一转载链不算独立证据；同职业不同体系不得互相借用克制结论。"
+    "watch_or_avoid": "卡组强度可见，但已被国服B站内容端放大、已有多条被针对证据，或无法把克制说法映射到当前具体40张。",
+    "prohibition": "国服判断以B站卡组视频为主要扩散信号，X只作上游预警和强度来源；播放量不是使用率，连胜帖数量不是胜率；同一转载链不算独立证据；同职业不同体系不得互相借用克制结论。"
   },
   "coverage": {
     "x": {
@@ -20,11 +20,11 @@
     },
     "bilibili": {
       "status": "partial",
-      "window": "截至 2026-08-28 13:30 +08:00",
+      "window": "截至 2026-08-28 14:40 +08:00",
       "named_accounts": 9,
       "checked_accounts": 6,
       "unverified_accounts": 3,
-      "note": "公开搜索页可见主题扩散，但任意账号接口间歇返回风控错误；未把缺失账号解释为没有更新。"
+      "note": "国服判断以公开搜索页中的卡组视频、独立创作者数与观察时播放量为主；播放量是非去重曝光代理，不是实际天梯使用率。任意账号接口间歇返回风控错误，未把缺失账号解释为没有更新。"
     },
     "matchups": {
       "status": "self_report_only",
@@ -66,6 +66,27 @@
       "url": "https://search.bilibili.com/all?keyword=%E8%B6%85%E5%87%A1%E4%B8%96%E7%95%8C",
       "observed_at": "2026-08-28T13:15:00+08:00",
       "definition": "用于观察视频标题、作者与发布时间形成的内容扩散，不把播放量解释为卡组强度。"
+    },
+    {
+      "id": "bilibili_af_search",
+      "label": "B站：新版本造物超越者检索",
+      "url": "https://search.bilibili.com/all?keyword=%E5%BD%B1%E4%B9%8B%E8%AF%97+%E9%80%A0%E7%89%A9%E8%B6%85%E8%B6%8A%E8%80%85+%E6%96%B0%E7%89%88%E6%9C%AC&from_source=web_search",
+      "observed_at": "2026-08-28T14:35:00+08:00",
+      "definition": "用于核验国服B站上的新版本AF卡组视频、独立创作者与观察时播放量；不代表实际使用率。"
+    },
+    {
+      "id": "bilibili_mid_search",
+      "label": "B站：新版本中速梦魇检索",
+      "url": "https://search.bilibili.com/all?keyword=%E5%BD%B1%E4%B9%8B%E8%AF%97+%E4%B8%AD%E9%80%9F%E6%A2%A6%E9%AD%87+%E6%96%B0%E7%89%88%E6%9C%AC&from_source=web_search",
+      "observed_at": "2026-08-28T14:39:00+08:00",
+      "definition": "用于核验国服B站上的新版本中速梦魇卡组视频、独立创作者与观察时播放量；不代表实际使用率。"
+    },
+    {
+      "id": "bilibili_exp_search",
+      "label": "B站：新版本实验体法检索",
+      "url": "https://search.bilibili.com/all?keyword=%E5%BD%B1%E4%B9%8B%E8%AF%97+%E5%AE%9E%E9%AA%8C%E4%BD%93%E6%B3%95+%E6%96%B0%E7%89%88%E6%9C%AC&from_source=web_search",
+      "observed_at": "2026-08-28T14:37:00+08:00",
+      "definition": "用于核验国服B站上的新版本实验体法卡组视频、独立创作者与观察时播放量；不代表实际使用率。"
     }
   ],
   "meta_presence": [
@@ -119,12 +140,13 @@
       "variant_scope": "midrange",
       "fingerprint": "cM8Ex2_fPCmx3_f0oGx3_fndGx3",
       "deck_url": "https://shadowverse-wb.com/ja/deck/detail/?hash=1.5.cM8E.cM8E.fPCm.fPCm.fPCm.f0oG.f0oG.f0oG.fndG.fndG.fndG.dtoY.dtoY.dtoY.eeNm.eeNm.eeNm.f1KU.f1KU.f1KU.fPhs.fPhs.f11k.f11k.f11k.f1W-.f1W-.f1W-.foL-.foL-.foL-.fPxU.fPxU.fPxU.foM8.foM8.foM8.f1X8.f1X8.f1X8",
-      "source_url": "https://shadowverse-wins.com/single.php?manageId=107813",
+      "source_url": "https://x.com/Keniwo0428/status/2093023414458204387",
+      "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107813",
       "source_account": "Keniwo",
       "published_at": "2026-08-28T00:00:00+09:00",
       "performance": "10连胜",
       "copy_ready": true,
-      "notes": "当前公开连胜帖聚类第一，信息差风险高于AF。"
+      "notes": "X端公开连胜帖聚类第一，且国服B站已有高播放卡组推荐；作为常规强势牌观察，不再视为冷门信息差。"
     },
     {
       "id": "experiment-m1kumomo-10",
@@ -179,8 +201,8 @@
     {"id": "str-af-utatomo", "archetype_id": "artifact_nemesis", "variant_scope": "artifact", "independent_group": "Utatomo", "source_url": "https://x.com/utatomo_sv/status/2092941348928405768", "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107694", "result": "17连胜", "quality": "direct_x_post"},
     {"id": "str-af-gel", "archetype_id": "artifact_nemesis", "variant_scope": "artifact", "independent_group": "Stonebridge gel", "source_url": "https://x.com/gelrj9e6/status/2093042343775768892", "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107800", "result": "17连胜", "quality": "direct_x_post"},
     {"id": "str-af-kamuku", "archetype_id": "artifact_nemesis", "variant_scope": "artifact", "independent_group": "KAMUKU60", "source_url": "https://x.com/KAMUKU60/status/2092936618995048888", "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107678", "result": "10连胜", "quality": "direct_x_post"},
-    {"id": "str-mid-keniwo", "archetype_id": "midrange_nightmare", "variant_scope": "midrange", "independent_group": "Keniwo", "source_url": "https://shadowverse-wins.com/single.php?manageId=107813", "result": "10连胜", "quality": "direct_deck_page"},
-    {"id": "str-mid-kanata", "archetype_id": "midrange_nightmare", "variant_scope": "midrange", "independent_group": "Kanata_poe0518", "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&md=h&p=%E3%83%8A%E3%82%A4%E3%83%88%E3%83%A1%E3%82%A2+%E9%80%A3%E5%8B%9D&rkf=1", "result": "30局23胜7负", "quality": "search_excerpt_with_sample"},
+    {"id": "str-mid-keniwo", "archetype_id": "midrange_nightmare", "variant_scope": "midrange", "independent_group": "Keniwo", "source_url": "https://x.com/Keniwo0428/status/2093023414458204387", "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107813", "result": "10连胜", "quality": "direct_x_post"},
+    {"id": "str-mid-kanata", "archetype_id": "midrange_nightmare", "variant_scope": "midrange", "independent_group": "Kanata_poe0518", "source_url": "https://x.com/Kanata_poe0518/status/2092990391234826370", "result": "30局23胜7负", "quality": "direct_x_post_with_overall_sample"},
     {"id": "str-exp-m1", "archetype_id": "experiment_witch", "variant_scope": "experiment_sefie", "independent_group": "M1kumomo", "source_url": "https://shadowverse-wins.com/single.php?manageId=107775", "result": "10连胜", "quality": "direct_deck_page"},
     {"id": "str-exp-syu", "archetype_id": "experiment_witch", "variant_scope": "experiment_sefie", "independent_group": "Syu", "source_url": "https://shadowverse-wins.com/single.php?manageId=107801", "result": "17连胜", "quality": "direct_deck_page"},
     {"id": "str-exp-figole", "archetype_id": "experiment_witch", "variant_scope": "experiment_hybrid", "independent_group": "Figole1436", "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&nobtl=1&p=%E3%82%A6%E3%82%A3%E3%83%83%E3%83%81+%E9%80%A3%E5%8B%9D&rkf=1", "result": "16连胜", "quality": "search_excerpt"},
@@ -211,6 +233,9 @@
       "archetype_ids": ["experiment_witch"],
       "independent_group": "红发的大魔女",
       "source_url": "https://www.bilibili.com/video/BV1yH4o6BEpb/",
+      "source_id": "bilibili_topic_search",
+      "distribution_role": "卡组推荐",
+      "view_count_observed": null,
       "named_seed": false,
       "note": "已核验独立视频URL；作为实验体法扩散信号，不作为胜率证据。"
     },
@@ -224,8 +249,139 @@
       "archetype_ids": ["experiment_witch"],
       "independent_group": "芯星子",
       "source_url": "https://www.bilibili.com/video/BV1hChw66EV2/",
+      "source_id": "bilibili_topic_search",
+      "distribution_role": "卡组推荐",
+      "view_count_observed": null,
       "named_seed": false,
       "note": "标题形成早期扩散信号；不以T1措辞作为强度证据。"
+    },
+    {
+      "id": "bili-af-keeexing",
+      "creator": "困倦keeexing",
+      "title": "【影之诗】T1弹哭造物鱼！开服最高19连胜！几何倍增强的超模新卡！",
+      "published_label": "约4小时前",
+      "observed_at": "2026-08-28T14:35:00+08:00",
+      "content_type": "deck_video",
+      "archetype_ids": ["artifact_nemesis"],
+      "independent_group": "困倦keeexing",
+      "source_url": "https://www.bilibili.com/video/BV11p4f61EeA/",
+      "source_id": "bilibili_af_search",
+      "distribution_role": "卡组推荐",
+      "view_count_observed": 7843,
+      "named_seed": false,
+      "note": "新版本AF国服扩散信号；播放量仅表示观察时曝光，不作为胜率或使用率。"
+    },
+    {
+      "id": "bili-af-sishuyo",
+      "creator": "司舒哟",
+      "title": "【影之诗】85%胜率造物鱼！版本T1再获补强",
+      "published_label": "约15小时前",
+      "observed_at": "2026-08-28T14:35:00+08:00",
+      "content_type": "deck_video",
+      "archetype_ids": ["artifact_nemesis"],
+      "independent_group": "司舒哟",
+      "source_url": "https://www.bilibili.com/video/BV1od4d6xEPe/",
+      "source_id": "bilibili_af_search",
+      "distribution_role": "卡组推荐",
+      "view_count_observed": 1202,
+      "named_seed": false,
+      "note": "标题中的85%和T1不计为强度证据；仅计作AF的国服内容扩散。"
+    },
+    {
+      "id": "bili-mid-shiyue",
+      "creator": "诗月樱",
+      "title": "【影之诗卡组推荐】谢幕中速梦魇，新王登基！92%胜率、低造价、高强度",
+      "published_label": "约14小时前",
+      "observed_at": "2026-08-28T14:39:00+08:00",
+      "content_type": "deck_video",
+      "archetype_ids": ["midrange_nightmare"],
+      "independent_group": "诗月樱",
+      "source_url": "https://www.bilibili.com/video/BV1Gs4d6mErp/",
+      "source_id": "bilibili_mid_search",
+      "distribution_role": "卡组推荐",
+      "view_count_observed": 23000,
+      "named_seed": false,
+      "note": "高播放卡组推荐表明中速梦魇已在国服明显扩散；标题胜率不作为成绩证据。"
+    },
+    {
+      "id": "bili-mid-yinyue",
+      "creator": "银月与四叶草",
+      "title": "【超凡世界】徒姬再就业，不一样的中速梦！中速梦VS实验法",
+      "published_label": "约20小时前",
+      "observed_at": "2026-08-28T14:39:00+08:00",
+      "content_type": "deck_video",
+      "archetype_ids": ["midrange_nightmare"],
+      "independent_group": "银月与四叶草",
+      "source_url": "https://www.bilibili.com/video/BV15q4R6DEyq/",
+      "source_id": "bilibili_mid_search",
+      "distribution_role": "对局展示",
+      "view_count_observed": 2882,
+      "named_seed": false,
+      "note": "作为中速梦魇的国服曝光及对实验法对局展示；单局视频不作为克制胜率。"
+    },
+    {
+      "id": "bili-mid-kongbai",
+      "creator": "空白喵のDOTA2",
+      "title": "【影之诗卡组推荐】谢幕中速梦！针对环境实验法！有望T1",
+      "published_label": "约4小时前",
+      "observed_at": "2026-08-28T14:37:00+08:00",
+      "content_type": "deck_video",
+      "archetype_ids": ["midrange_nightmare"],
+      "independent_group": "空白喵のDOTA2",
+      "source_url": "https://www.bilibili.com/video/BV1GW4d6EENR/",
+      "source_id": "bilibili_exp_search",
+      "distribution_role": "卡组推荐",
+      "view_count_observed": 1889,
+      "named_seed": false,
+      "note": "计作中速梦魇国服扩散；标题中的针对与T1仅是作者主张，不新增独立克制证据。"
+    },
+    {
+      "id": "bili-exp-keeexing",
+      "creator": "困倦keeexing",
+      "title": "【影之诗】T1赛菲实验体法！255超模数值无脑碾压！新手必玩！",
+      "published_label": "约17小时前",
+      "observed_at": "2026-08-28T14:37:00+08:00",
+      "content_type": "deck_video",
+      "archetype_ids": ["experiment_witch"],
+      "independent_group": "困倦keeexing",
+      "source_url": "https://www.bilibili.com/video/BV13W4966EVB/",
+      "source_id": "bilibili_exp_search",
+      "distribution_role": "卡组推荐",
+      "view_count_observed": 16000,
+      "named_seed": false,
+      "note": "高播放实验体法推荐；标题措辞不作为强度或胜率证据。"
+    },
+    {
+      "id": "bili-exp-remilia",
+      "creator": "蕾米莉亚__Scarlet",
+      "title": "【影之诗】首日最强卡组！法师王朝未曾落幕！蕾米的实验法攻略！",
+      "published_label": "约2小时前",
+      "observed_at": "2026-08-28T14:37:00+08:00",
+      "content_type": "deck_video",
+      "archetype_ids": ["experiment_witch"],
+      "independent_group": "蕾米莉亚__Scarlet",
+      "source_url": "https://www.bilibili.com/video/BV1Ngtw6pENF/",
+      "source_id": "bilibili_exp_search",
+      "distribution_role": "卡组攻略",
+      "view_count_observed": 2082,
+      "named_seed": false,
+      "note": "计作实验体法国服扩散；标题中的最强不作为强度证据。"
+    },
+    {
+      "id": "bili-exp-roy",
+      "creator": "Roy罗伊",
+      "title": "《影之诗超凡世界》首日最强！增幅实验法卡组推荐讲解",
+      "published_label": "约17小时前",
+      "observed_at": "2026-08-28T14:37:00+08:00",
+      "content_type": "deck_video",
+      "archetype_ids": ["experiment_witch"],
+      "independent_group": "Roy罗伊",
+      "source_url": "https://www.bilibili.com/video/BV1p6496fEwJ/",
+      "source_id": "bilibili_exp_search",
+      "distribution_role": "卡组推荐",
+      "view_count_observed": 5814,
+      "named_seed": false,
+      "note": "计作实验体法国服扩散；播放量和标题不作为胜率证据。"
     },
     {
       "id": "bili-star-balance",
@@ -303,9 +459,9 @@
       "unfavored_id": "experiment_witch",
       "unfavored_scope": "experiment",
       "independent_group": "Cags",
-      "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&md=h&p=%E3%83%8A%E3%82%A4%E3%83%88%E3%83%A1%E3%82%A2+%E9%80%A3%E5%8B%9D&rkf=1",
+      "source_url": "https://x.com/Cags_sv/status/2093165364612046964",
       "evidence_type": "player_self_report",
-      "directness": "search_excerpt",
+      "directness": "direct_x_post",
       "summary": "实验体法作者称梦魇较难应对；另有中速梦魇帖指向同一方向。",
       "sample_games": null
     },
@@ -316,9 +472,9 @@
       "unfavored_id": "experiment_witch",
       "unfavored_scope": "witch",
       "independent_group": "Kanata_poe0518",
-      "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&md=h&p=%E3%83%8A%E3%82%A4%E3%83%88%E3%83%A1%E3%82%A2+%E9%80%A3%E5%8B%9D&rkf=1",
+      "source_url": "https://x.com/Kanata_poe0518/status/2092990391234826370",
       "evidence_type": "player_sample_and_self_report",
-      "directness": "search_excerpt",
+      "directness": "direct_x_post",
       "summary": "30局23胜7负的中速梦魇样本称对巫师环境有针对性；未公开分对局样本。",
       "sample_games": 30
     },
