@@ -6,3 +6,5 @@
 - 对局反馈：<https://github.com/Ayoo-Yu/shadowverse-worlds-beyond-daily/issues/new?template=matchup-feedback.yml>
 
 连胜帖数量不是胜率，视频热度不是卡组强度，同职业的不同体系不共享克制结论。当前页面是每日证据快照，不构成总体天梯对局矩阵。
+
+每日固定检索来源、执行顺序和失败语义见 [`WORKFLOW.md`](WORKFLOW.md)；机器可读清单见 [`workflow.json`](workflow.json)。只有所有关键检查完整核验后，网页才会输出可执行上分推荐。
