@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "report_date": "2026-08-28",
-  "generated_at": "2026-08-28T16:08:56+08:00",
+  "generated_at": "2026-08-28T16:45:00+08:00",
   "game": "影之诗：超凡世界",
   "environment": "第9弹卡包「复苏的阿兹弗特」上线第2天",
   "collection_parameters": {
@@ -19,9 +19,17 @@
   },
   "coverage": {
     "x": {
-      "status": "reviewed_public_index",
+      "status": "complete",
       "window": "2026-08-27 至 2026-08-28",
-      "note": "用 Shadowverse Wins、ShadoLabo 与 Yahoo!实时检索复核公开帖；未接入 X 官方全量流。"
+      "note": "来源覆盖与内容复核分开计算；浏览器模式是登录态Latest的固定有界检索，不等同于官方API全量分页。",
+      "window_start": "2026-08-27T00:00:00+08:00",
+      "window_end": "2026-08-28T16:45:00+08:00",
+      "workflow_checks": 3,
+      "verified_checks": 3,
+      "candidate_posts": 26,
+      "reviewed_candidates": 26,
+      "pending_candidates": 0,
+      "provider": "x_authenticated_browser_ui"
     },
     "bilibili": {
       "status": "complete",
@@ -38,9 +46,9 @@
   },
   "collection_audit": {
     "workflow_version": 1,
-    "run_id": "2026-08-28T16-08-56+08-00",
+    "run_id": "2026-08-28T16-45-00+08-00",
     "started_at": "2026-08-28T14:53:37+08:00",
-    "completed_at": "2026-08-28T16:08:56+08:00",
+    "completed_at": "2026-08-28T16:45:00+08:00",
     "checks": [
       {
         "id": "bili_account_82389",
@@ -153,25 +161,40 @@
       },
       {
         "id": "x_recent_jp",
-        "status": "partial",
-        "checked_at": "2026-08-28T12:55:00+08:00",
-        "method": "public_index_review",
-        "evidence_url": "https://search.yahoo.co.jp/realtime",
-        "error": "本轮使用公开索引与原帖回链；本机未配置X_BEARER_TOKEN，官方X Recent Search未执行，覆盖不完整。"
+        "status": "verified",
+        "checked_at": "2026-08-28T16:45:00+08:00",
+        "method": "authenticated_browser_latest_search",
+        "evidence_url": "https://x.com/search?q=%28%23%E3%82%B7%E3%83%A3%E3%83%89%E3%83%90WB+OR+%23ShadowverseWB%29+%28%E9%80%A3%E5%8B%9D+OR+%E3%83%87%E3%83%83%E3%82%AD+OR+%E3%82%B0%E3%83%A9%E3%83%9E%E3%82%B9+OR+BEYOND%29+-filter%3Aretweets&src=typed_query&f=live",
+        "query": "(#シャドバWB OR #ShadowverseWB) (連勝 OR デッキ OR グラマス OR BEYOND) -filter:retweets",
+        "coverage_complete": true,
+        "coverage_basis": "fixed_latest_query_visible_results_reviewed",
+        "result": "登录浏览器Latest检索协议已完成；观察7条帖子，筛出5条候选。"
       },
       {
         "id": "x_recent_global",
-        "status": "partial",
-        "checked_at": "2026-08-28T12:55:00+08:00",
-        "method": "public_index_review",
-        "evidence_url": "https://search.yahoo.co.jp/realtime",
-        "error": "本轮使用公开索引与原帖回链；本机未配置X_BEARER_TOKEN，官方X Recent Search未执行，覆盖不完整。"
+        "status": "verified",
+        "checked_at": "2026-08-28T16:45:00+08:00",
+        "method": "authenticated_browser_latest_search",
+        "evidence_url": "https://x.com/search?q=%28%23ShadowverseWB+OR+%22Worlds+Beyond%22%29+%28deck+OR+winstreak+OR+%22win+streak%22+OR+Grandmaster%29+-filter%3Aretweets&src=typed_query&f=live",
+        "query": "(#ShadowverseWB OR \"Worlds Beyond\") (deck OR winstreak OR \"win streak\" OR Grandmaster) -filter:retweets",
+        "coverage_complete": true,
+        "coverage_basis": "fixed_latest_query_visible_results_reviewed",
+        "result": "登录浏览器Latest检索协议已完成；观察5条帖子，筛出4条候选。"
       },
       {
         "id": "x_seed_accounts",
-        "status": "not_run",
-        "method": "not_run",
-        "error": "本机未配置X_BEARER_TOKEN，本轮无法对sources.json中的全部X固定及动态账号执行官方联合from:查询。"
+        "status": "verified",
+        "checked_at": "2026-08-28T16:45:00+08:00",
+        "method": "authenticated_browser_from_account_search",
+        "evidence_url": "https://x.com/search?q=%28from%3Ashadowversewins+OR+from%3Asv_labo+OR+from%3ASpicies_+OR+from%3Ayuuri8540+OR+from%3Aagunomomoclo+OR+from%3AMishadow51+OR+from%3Afeeeeeeeeeg+OR+from%3AUtatomo_sv+OR+from%3Aemrys_youtube+OR+from%3AFigole1436+OR+from%3Aowaowano_mi+OR+from%3Anibu1203%29+-filter%3Aretweets+-filter%3Areplies&src=typed_query&f=live",
+        "query": "(from:shadowversewins OR from:sv_labo OR from:Spicies_ OR from:yuuri8540 OR from:agunomomoclo OR from:Mishadow51 OR from:feeeeeeeeeg OR from:Utatomo_sv OR from:emrys_youtube OR from:Figole1436 OR from:owaowano_mi OR from:nibu1203) -filter:retweets -filter:replies",
+        "coverage_complete": true,
+        "coverage_basis": "combined_exact_from_query_scrolled_until_older_than_window_start",
+        "cutoff_reached": true,
+        "oldest_observed_at": "2026-08-26T14:05:01Z",
+        "active_account_count": 12,
+        "accounts_with_posts": 10,
+        "result": "登录浏览器Latest检索逐项覆盖12个有效账号；观察54条帖子，10个账号在窗口内有更新。"
       },
       {
         "id": "x_index_shadolabo",
@@ -1178,6 +1201,611 @@
       "uid": "82389",
       "review_status": "reviewed",
       "classification": "reviewed_non_deck_content"
+    }
+  ],
+  "x_candidates": [
+    {
+      "post_id": "2093256026279874983",
+      "author_id": "",
+      "author_username": "shadowversewins",
+      "author_name": "Shadowverse Wins",
+      "created_at": "2026-08-28T08:35:02Z",
+      "lang": "ja",
+      "text": "连携皇家17连胜的聚合转述。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/shadowversewins/status/2093256026279874983",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "repost",
+      "review_note": "聚合转载，不新增独立作者组。"
+    },
+    {
+      "post_id": "2093252764474446229",
+      "author_id": "",
+      "author_username": "emrys_youtube",
+      "author_name": "emrys",
+      "created_at": "2026-08-28T08:22:04Z",
+      "lang": "ja",
+      "text": "融合AF多套列表测试期间维持Diamond 100%，作者认为融合路线不差，但尚未完成与疾走AF比较。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/emrys_youtube/status/2093252764474446229",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "deck_candidate",
+      "review_note": null
+    },
+    {
+      "post_id": "2093250706836951354",
+      "author_id": "",
+      "author_username": "hideo1254",
+      "author_name": "hide",
+      "created_at": "2026-08-28T08:13:53Z",
+      "lang": "ja",
+      "text": "弃牌龙构筑；作者称强度高并有冲击Tier 1的潜力。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/hideo1254/status/2093250706836951354",
+      "matched_check_ids": [
+        "x_recent_global",
+        "x_recent_jp"
+      ],
+      "review_status": "reviewed",
+      "classification": "deck_candidate",
+      "review_note": null
+    },
+    {
+      "post_id": "2093249739676647904",
+      "author_id": "",
+      "author_username": "ashash_sv",
+      "author_name": "あしゅ",
+      "created_at": "2026-08-28T08:10:03Z",
+      "lang": "ja",
+      "text": "瑟菲巫师途中12连胜并快速到达Grand Master。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/ashash_sv/status/2093249739676647904",
+      "matched_check_ids": [
+        "x_recent_jp"
+      ],
+      "review_status": "reviewed",
+      "classification": "deck_candidate",
+      "review_note": "直接玩家成绩信号；仍需核验图片中的具体40张。"
+    },
+    {
+      "post_id": "2093248473684648364",
+      "author_id": "",
+      "author_username": "shadowversewins",
+      "author_name": "Shadowverse Wins",
+      "created_at": "2026-08-28T08:05:01Z",
+      "lang": "ja",
+      "text": "Dust Days精灵13连胜的聚合转述。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/shadowversewins/status/2093248473684648364",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "repost",
+      "review_note": null
+    },
+    {
+      "post_id": "2093245172490645959",
+      "author_id": "",
+      "author_username": "Quat3280",
+      "author_name": "Quat3280",
+      "created_at": "2026-08-28T07:51:54Z",
+      "lang": "ja",
+      "text": "中速梦魇到达Grand Master，并讨论偏前压与长局组件调整。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/Quat3280/status/2093245172490645959",
+      "matched_check_ids": [
+        "x_recent_jp"
+      ],
+      "review_status": "reviewed",
+      "classification": "deck_candidate",
+      "review_note": "直接玩家成绩与构筑调整信号。"
+    },
+    {
+      "post_id": "2093244517994639620",
+      "author_id": "",
+      "author_username": "menmaesv_",
+      "author_name": "めんま＠ESV シャドバWB",
+      "created_at": "2026-08-28T07:49:18Z",
+      "lang": "ja",
+      "text": "连携特化控制皇家构筑，作者称能稳定提升MP。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/menmaesv_/status/2093244517994639620",
+      "matched_check_ids": [
+        "x_recent_jp"
+      ],
+      "review_status": "reviewed",
+      "classification": "deck_candidate",
+      "review_note": "新构筑候选；稳定性措辞仅作为作者自述。"
+    },
+    {
+      "post_id": "2093244429108912368",
+      "author_id": "",
+      "author_username": "takeno_coh",
+      "author_name": "武野コタロウ",
+      "created_at": "2026-08-28T07:48:57Z",
+      "lang": "ja",
+      "text": "巫师构筑的官方Deck Portal链接。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/takeno_coh/status/2093244429108912368",
+      "matched_check_ids": [
+        "x_recent_jp"
+      ],
+      "review_status": "reviewed",
+      "classification": "deck_candidate",
+      "review_note": "有具体构筑链接，但没有独立战绩。"
+    },
+    {
+      "post_id": "2093234896915620178",
+      "author_id": "",
+      "author_username": "emrys_youtube",
+      "author_name": "emrys",
+      "created_at": "2026-08-28T07:11:04Z",
+      "lang": "ja",
+      "text": "融合AF当前列表与单卡数量微调说明。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/emrys_youtube/status/2093234896915620178",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "deck_candidate",
+      "review_note": null
+    },
+    {
+      "post_id": "2093218276709196080",
+      "author_id": "",
+      "author_username": "shadowversewins",
+      "author_name": "Shadowverse Wins",
+      "created_at": "2026-08-28T06:05:01Z",
+      "lang": "ja",
+      "text": "中速梦魇新环境16连胜的聚合转述。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/shadowversewins/status/2093218276709196080",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "repost",
+      "review_note": null
+    },
+    {
+      "post_id": "2093210727876342188",
+      "author_id": "",
+      "author_username": "shadowversewins",
+      "author_name": "Shadowverse Wins",
+      "created_at": "2026-08-28T05:35:02Z",
+      "lang": "ja",
+      "text": "巫师17连胜的聚合转述。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/shadowversewins/status/2093210727876342188",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "repost",
+      "review_note": null
+    },
+    {
+      "post_id": "2093200549600739668",
+      "author_id": "",
+      "author_username": "Devil_A2us",
+      "author_name": "マオウアルス 2軍デッキ",
+      "created_at": "2026-08-28T04:54:35Z",
+      "lang": "ja",
+      "text": "龙族构筑到达Diamond，并附官方Deck Portal链接。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/Devil_A2us/status/2093200549600739668",
+      "matched_check_ids": [
+        "x_recent_global"
+      ],
+      "review_status": "reviewed",
+      "classification": "deck_candidate",
+      "review_note": null
+    },
+    {
+      "post_id": "2093195627098468691",
+      "author_id": "",
+      "author_username": "shadowversewins",
+      "author_name": "Shadowverse Wins",
+      "created_at": "2026-08-28T04:35:01Z",
+      "lang": "ja",
+      "text": "进化主教16连胜的聚合转述。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/shadowversewins/status/2093195627098468691",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "repost",
+      "review_note": null
+    },
+    {
+      "post_id": "2093195562292318257",
+      "author_id": "",
+      "author_username": "aiusmile",
+      "author_name": "愛生笑顔",
+      "created_at": "2026-08-28T04:34:46Z",
+      "lang": "ja",
+      "text": "携带Katarina的Highlander超越者构筑，附官方牌表。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/aiusmile/status/2093195562292318257",
+      "matched_check_ids": [
+        "x_recent_global"
+      ],
+      "review_status": "reviewed",
+      "classification": "deck_candidate",
+      "review_note": null
+    },
+    {
+      "post_id": "2093188076466254001",
+      "author_id": "",
+      "author_username": "shadowversewins",
+      "author_name": "Shadowverse Wins",
+      "created_at": "2026-08-28T04:05:01Z",
+      "lang": "ja",
+      "text": "海盗皇家直播中12连胜的聚合转述。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/shadowversewins/status/2093188076466254001",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "repost",
+      "review_note": null
+    },
+    {
+      "post_id": "2093181621579264219",
+      "author_id": "",
+      "author_username": "QcOgQs2D6G79315",
+      "author_name": "ましかン",
+      "created_at": "2026-08-28T03:39:22Z",
+      "lang": "ja",
+      "text": "巫师构筑及官方Deck Portal链接。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/QcOgQs2D6G79315/status/2093181621579264219",
+      "matched_check_ids": [
+        "x_recent_global"
+      ],
+      "review_status": "reviewed",
+      "classification": "deck_candidate",
+      "review_note": null
+    },
+    {
+      "post_id": "2093174781889880553",
+      "author_id": "",
+      "author_username": "Utatomo_sv",
+      "author_name": "Utatomo",
+      "created_at": "2026-08-28T03:12:11Z",
+      "lang": "ja",
+      "text": "AF超越者CR1600段直播与持续实战。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/Utatomo_sv/status/2093174781889880553",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "deck_candidate",
+      "review_note": null
+    },
+    {
+      "post_id": "2093173735872409606",
+      "author_id": "",
+      "author_username": "sv_labo",
+      "author_name": "ShadoLabo",
+      "created_at": "2026-08-28T03:08:02Z",
+      "lang": "ja",
+      "text": "发布GM构筑对比，覆盖精灵、皇家、实验/增幅巫师以及快攻/中速梦魇。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/sv_labo/status/2093173735872409606",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "deck_candidate",
+      "review_note": null
+    },
+    {
+      "post_id": "2093172975721955423",
+      "author_id": "",
+      "author_username": "shadowversewins",
+      "author_name": "Shadowverse Wins",
+      "created_at": "2026-08-28T03:05:01Z",
+      "lang": "ja",
+      "text": "AF超越者18连胜的聚合转述。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/shadowversewins/status/2093172975721955423",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "repost",
+      "review_note": null
+    },
+    {
+      "post_id": "2093023124388548959",
+      "author_id": "",
+      "author_username": "Utatomo_sv",
+      "author_name": "Utatomo",
+      "created_at": "2026-08-27T17:09:34Z",
+      "lang": "ja",
+      "text": "AF超越者到达GM、最高17连胜，并讨论Eyes Eden与Imari。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/Utatomo_sv/status/2093023124388548959",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "known_evidence",
+      "review_note": null
+    },
+    {
+      "post_id": "2093014925656616980",
+      "author_id": "",
+      "author_username": "Figole1436",
+      "author_name": "Figole",
+      "created_at": "2026-08-27T16:36:59Z",
+      "lang": "ja",
+      "text": "实验体秘术巫师直播16连胜，作者强调瑟菲与20点OTK路线。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/Figole1436/status/2093014925656616980",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "deck_candidate",
+      "review_note": null
+    },
+    {
+      "post_id": "2093006883401711909",
+      "author_id": "",
+      "author_username": "shadowversewins",
+      "author_name": "Shadowverse Wins",
+      "created_at": "2026-08-27T16:05:01Z",
+      "lang": "ja",
+      "text": "财宝皇家13连胜的聚合转述。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/shadowversewins/status/2093006883401711909",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "repost",
+      "review_note": null
+    },
+    {
+      "post_id": "2092999335067984109",
+      "author_id": "",
+      "author_username": "shadowversewins",
+      "author_name": "Shadowverse Wins",
+      "created_at": "2026-08-27T15:35:02Z",
+      "lang": "ja",
+      "text": "实验体/瑟菲巫师16连胜的聚合转述。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/shadowversewins/status/2092999335067984109",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "repost",
+      "review_note": null
+    },
+    {
+      "post_id": "2092958239684280670",
+      "author_id": "",
+      "author_username": "feeeeeeeeeg",
+      "author_name": "ふぇぐ",
+      "created_at": "2026-08-27T12:51:44Z",
+      "lang": "ja",
+      "text": "皇家11连胜，讨论副船长、Arj Dome与Barbaros斩杀。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/feeeeeeeeeg/status/2092958239684280670",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "deck_candidate",
+      "review_note": null
+    },
+    {
+      "post_id": "2092954035154538941",
+      "author_id": "",
+      "author_username": "shadowversewins",
+      "author_name": "Shadowverse Wins",
+      "created_at": "2026-08-27T12:35:01Z",
+      "lang": "ja",
+      "text": "实验体巫师13连胜的聚合转述。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/shadowversewins/status/2092954035154538941",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "repost",
+      "review_note": null
+    },
+    {
+      "post_id": "2092950258263425392",
+      "author_id": "",
+      "author_username": "shadowversewins",
+      "author_name": "Shadowverse Wins",
+      "created_at": "2026-08-27T12:20:01Z",
+      "lang": "ja",
+      "text": "Utatomo AF超越者17连胜的聚合转述。",
+      "public_metrics": {},
+      "media": [],
+      "source_url": "https://x.com/shadowversewins/status/2092950258263425392",
+      "matched_check_ids": [
+        "x_seed_accounts"
+      ],
+      "review_status": "reviewed",
+      "classification": "repost",
+      "review_note": null
+    }
+  ],
+  "x_accounts": [
+    {
+      "source_id": "x:shadowversewins",
+      "display_name": "Shadowverse Wins",
+      "username": "shadowversewins",
+      "url": "https://x.com/shadowversewins",
+      "status": "verified",
+      "post_count": 24,
+      "latest_post_id": "2093256026279874983",
+      "latest_created_at": "2026-08-28T08:35:02Z",
+      "latest_url": "https://x.com/shadowversewins/status/2093256026279874983"
+    },
+    {
+      "source_id": "x:sv_labo",
+      "display_name": "シャドバ研究所 / ShadoLabo",
+      "username": "sv_labo",
+      "url": "https://x.com/sv_labo",
+      "status": "verified",
+      "post_count": 2,
+      "latest_post_id": "2093173735872409606",
+      "latest_created_at": "2026-08-28T03:08:02Z",
+      "latest_url": "https://x.com/sv_labo/status/2093173735872409606"
+    },
+    {
+      "source_id": "x:spicies",
+      "display_name": "Spicies",
+      "username": "Spicies_",
+      "url": "https://x.com/Spicies_",
+      "status": "verified",
+      "post_count": 1,
+      "latest_post_id": "2092856968197406862",
+      "latest_created_at": "2026-08-27T06:09:19Z",
+      "latest_url": "https://x.com/Spicies_/status/2092856968197406862"
+    },
+    {
+      "source_id": "x:yuuri8540",
+      "display_name": "yuuri",
+      "username": "yuuri8540",
+      "url": "https://x.com/yuuri8540",
+      "status": "verified",
+      "post_count": 0,
+      "latest_post_id": null,
+      "latest_created_at": null,
+      "latest_url": null
+    },
+    {
+      "source_id": "x:agunomomoclo",
+      "display_name": "あぐのむ",
+      "username": "agunomomoclo",
+      "url": "https://x.com/agunomomoclo",
+      "status": "verified",
+      "post_count": 2,
+      "latest_post_id": "2093207340245995634",
+      "latest_created_at": "2026-08-28T05:21:34Z",
+      "latest_url": "https://x.com/agunomomoclo/status/2093207340245995634"
+    },
+    {
+      "source_id": "x:mishadow51",
+      "display_name": "Mishadow / 一只小吾影",
+      "username": "Mishadow51",
+      "url": "https://x.com/Mishadow51",
+      "status": "verified",
+      "post_count": 5,
+      "latest_post_id": "2092841336353472724",
+      "latest_created_at": "2026-08-27T05:07:12Z",
+      "latest_url": "https://x.com/Mishadow51/status/2092841336353472724"
+    },
+    {
+      "source_id": "x:feeeeeeeeeg",
+      "display_name": "feeeeeeeeeg",
+      "username": "feeeeeeeeeg",
+      "url": "https://x.com/feeeeeeeeeg",
+      "status": "verified",
+      "post_count": 3,
+      "latest_post_id": "2093207937602986446",
+      "latest_created_at": "2026-08-28T05:23:56Z",
+      "latest_url": "https://x.com/feeeeeeeeeg/status/2093207937602986446"
+    },
+    {
+      "source_id": "x:utatomo_sv",
+      "display_name": "Utatomo",
+      "username": "Utatomo_sv",
+      "url": "https://x.com/Utatomo_sv",
+      "status": "verified",
+      "post_count": 3,
+      "latest_post_id": "2093174781889880553",
+      "latest_created_at": "2026-08-28T03:12:11Z",
+      "latest_url": "https://x.com/Utatomo_sv/status/2093174781889880553"
+    },
+    {
+      "source_id": "x:emrys_youtube",
+      "display_name": "emrys",
+      "username": "emrys_youtube",
+      "url": "https://x.com/emrys_youtube",
+      "status": "verified",
+      "post_count": 8,
+      "latest_post_id": "2093252764474446229",
+      "latest_created_at": "2026-08-28T08:22:04Z",
+      "latest_url": "https://x.com/emrys_youtube/status/2093252764474446229"
+    },
+    {
+      "source_id": "x:figole1436",
+      "display_name": "Figole",
+      "username": "Figole1436",
+      "url": "https://x.com/Figole1436",
+      "status": "verified",
+      "post_count": 4,
+      "latest_post_id": "2093184678329200998",
+      "latest_created_at": "2026-08-28T03:51:31Z",
+      "latest_url": "https://x.com/Figole1436/status/2093184678329200998"
+    },
+    {
+      "source_id": "x:owaowano_mi",
+      "display_name": "owaowano_mi",
+      "username": "owaowano_mi",
+      "url": "https://x.com/owaowano_mi",
+      "status": "verified",
+      "post_count": 0,
+      "latest_post_id": null,
+      "latest_created_at": null,
+      "latest_url": null
+    },
+    {
+      "source_id": "x:nibu1203",
+      "display_name": "nibu",
+      "username": "nibu1203",
+      "url": "https://x.com/nibu1203",
+      "status": "verified",
+      "post_count": 2,
+      "latest_post_id": "2092845697716687087",
+      "latest_created_at": "2026-08-27T05:24:32Z",
+      "latest_url": "https://x.com/nibu1203/status/2092845697716687087"
     }
   ]
 }

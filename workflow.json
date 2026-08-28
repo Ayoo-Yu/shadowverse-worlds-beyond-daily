@@ -124,7 +124,7 @@
       "kind": "discovery_search",
       "query_id": "jp_core_deck_results",
       "critical": true,
-      "method_order": ["official_x_recent_search", "public_index_review"]
+      "method_order": ["official_x_recent_search", "authenticated_browser_latest_search", "public_index_review"]
     },
     {
       "id": "x_recent_global",
@@ -133,7 +133,7 @@
       "kind": "discovery_search",
       "query_id": "global_core_deck_results",
       "critical": true,
-      "method_order": ["official_x_recent_search", "public_index_review"]
+      "method_order": ["official_x_recent_search", "authenticated_browser_latest_search", "public_index_review"]
     },
     {
       "id": "x_seed_accounts",
@@ -142,7 +142,7 @@
       "kind": "source_registry_set",
       "source_selector": "config/sources.json 中 platform=x 且未过期的全部账号；逐账号记录，不以聚合页代替。",
       "critical": true,
-      "method_order": ["official_x_recent_search_from_account", "public_profile_review"]
+      "method_order": ["official_x_recent_search_from_account", "authenticated_browser_from_account_search", "public_profile_review"]
     },
     {
       "id": "x_index_shadolabo",
