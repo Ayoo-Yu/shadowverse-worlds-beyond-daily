@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "report_date": "2026-08-28",
-  "generated_at": "2026-08-28T14:53:37+08:00",
+  "generated_at": "2026-08-28T15:24:23+08:00",
   "game": "影之诗：超凡世界",
   "environment": "第9弹卡包「复苏的阿兹弗特」上线第2天",
   "public_url": "https://ayoo-yu.github.io/shadowverse-worlds-beyond-daily/",
@@ -21,16 +21,175 @@
     },
     "bilibili": {
       "status": "partial",
-      "window": "截至 2026-08-28 14:53 +08:00",
+      "window": "截至 2026-08-28 15:24 +08:00",
       "named_accounts": 9,
-      "checked_accounts": 6,
-      "unverified_accounts": 3,
-      "note": "国服判断以公开卡组视频、独立创作者数、精确发布时间与观察时播放量为主；首个视频满48小时才标为已扩散。播放量是非去重曝光代理，不是实际天梯使用率。任意账号接口间歇返回风控错误，未把缺失账号解释为没有更新。"
+      "checked_accounts": 2,
+      "unverified_accounts": 7,
+      "note": "逐 UID 审计后仅星野饼美与璐缇雅Official完成可复核读取；NightVine为部分覆盖，其余6个账号被412/-799风控阻断。未知不按无更新处理，本轮推荐模式降为 provisional。"
     },
     "matchups": {
       "status": "self_report_only",
       "note": "当前只有独立玩家自述与小样本战绩，没有可复核的全量对局矩阵，因此不输出胜率百分比。"
     }
+  },
+  "collection_audit": {
+    "workflow_version": 1,
+    "run_id": "2026-08-28T15-24-23+08-00",
+    "started_at": "2026-08-28T14:53:37+08:00",
+    "completed_at": "2026-08-28T15:24:23+08:00",
+    "checks": [
+      {
+        "id": "bili_account_82389",
+        "status": "verified",
+        "checked_at": "2026-08-28T15:24:23+08:00",
+        "method": "direct_video_metadata_and_exact_account_match",
+        "account_uid": "82389",
+        "evidence_url": "https://www.bilibili.com/video/BV1GYtF6ZEHj/",
+        "result": "确认上线后发布罪人奥义主教具体卡组视频。"
+      },
+      {
+        "id": "bili_account_546495",
+        "status": "blocked",
+        "checked_at": "2026-08-28T15:24:23+08:00",
+        "method": "account_archive_api_then_site_search",
+        "account_uid": "546495",
+        "evidence_url": "https://space.bilibili.com/546495",
+        "error": "账号投稿接口返回412/-799，站内搜索回退未完成精确UID核验；结果未知。"
+      },
+      {
+        "id": "bili_account_473097569",
+        "status": "blocked",
+        "checked_at": "2026-08-28T15:24:23+08:00",
+        "method": "account_archive_api_then_site_search",
+        "account_uid": "473097569",
+        "evidence_url": "https://space.bilibili.com/473097569",
+        "error": "账号投稿接口返回412/-799，站内搜索回退未完成精确UID核验；结果未知。"
+      },
+      {
+        "id": "bili_account_169172902",
+        "status": "blocked",
+        "checked_at": "2026-08-28T15:24:23+08:00",
+        "method": "account_archive_api_then_site_search",
+        "account_uid": "169172902",
+        "evidence_url": "https://space.bilibili.com/169172902",
+        "error": "账号投稿接口返回412/-799，站内搜索回退未完成精确UID核验；结果未知。"
+      },
+      {
+        "id": "bili_account_429920",
+        "status": "blocked",
+        "checked_at": "2026-08-28T15:24:23+08:00",
+        "method": "account_archive_api_then_site_search",
+        "account_uid": "429920",
+        "evidence_url": "https://space.bilibili.com/429920",
+        "error": "账号投稿接口返回412/-799，站内搜索回退未完成精确UID核验；结果未知。"
+      },
+      {
+        "id": "bili_account_307980",
+        "status": "partial",
+        "checked_at": "2026-08-28T15:24:23+08:00",
+        "method": "site_search_exact_name",
+        "account_uid": "307980",
+        "evidence_url": "https://search.bilibili.com/all?keyword=NightVine&order=pubdate",
+        "error": "搜索请求成功但没有返回可用的精确作者匹配，无法证明账号观察窗口完整；结果未知。"
+      },
+      {
+        "id": "bili_account_1472898403",
+        "status": "verified",
+        "checked_at": "2026-08-28T15:24:23+08:00",
+        "method": "site_search_exact_author_and_uid",
+        "account_uid": "1472898403",
+        "evidence_url": "https://www.bilibili.com/video/BV1pb8o6yEqu/",
+        "result": "最新可见稿件为8月27日国际BO10比赛视频，不是具体卡组推荐。"
+      },
+      {
+        "id": "bili_account_157278",
+        "status": "blocked",
+        "checked_at": "2026-08-28T15:24:23+08:00",
+        "method": "account_archive_api_then_site_search",
+        "account_uid": "157278",
+        "evidence_url": "https://space.bilibili.com/157278",
+        "error": "账号投稿接口返回412/-799，站内搜索回退未完成精确UID核验；结果未知。"
+      },
+      {
+        "id": "bili_account_22479410",
+        "status": "blocked",
+        "checked_at": "2026-08-28T15:24:23+08:00",
+        "method": "account_archive_api_then_site_search",
+        "account_uid": "22479410",
+        "evidence_url": "https://space.bilibili.com/22479410",
+        "error": "账号投稿接口返回412/-799，站内搜索回退未完成精确UID核验；结果未知。"
+      },
+      {
+        "id": "bili_search_topic",
+        "status": "verified",
+        "checked_at": "2026-08-28T14:53:37+08:00",
+        "method": "site_search_sorted_by_date",
+        "evidence_url": "https://search.bilibili.com/all?keyword=%E8%B6%85%E5%87%A1%E4%B8%96%E7%95%8C&order=pubdate",
+        "result": "完成主题检索并记录标题、作者、发布时间与观察播放。"
+      },
+      {
+        "id": "bili_search_archetypes",
+        "status": "verified",
+        "checked_at": "2026-08-28T14:53:37+08:00",
+        "method": "site_search_sorted_by_date",
+        "evidence_url": "https://search.bilibili.com/all?keyword=%E5%BD%B1%E4%B9%8B%E8%AF%97%20%E8%B6%85%E5%87%A1%E4%B8%96%E7%95%8C&order=pubdate",
+        "result": "已分别复核AF、中速梦魇、实验体法和罪人主教；逐条结果见bilibili_observations。"
+      },
+      {
+        "id": "x_recent_jp",
+        "status": "partial",
+        "checked_at": "2026-08-28T12:55:00+08:00",
+        "method": "public_index_review",
+        "evidence_url": "https://search.yahoo.co.jp/realtime",
+        "error": "本轮使用公开索引与原帖回链，未执行官方X Recent Search，覆盖不完整。"
+      },
+      {
+        "id": "x_recent_global",
+        "status": "partial",
+        "checked_at": "2026-08-28T12:55:00+08:00",
+        "method": "public_index_review",
+        "evidence_url": "https://search.yahoo.co.jp/realtime",
+        "error": "本轮使用公开索引与原帖回链，未执行官方X Recent Search，覆盖不完整。"
+      },
+      {
+        "id": "x_seed_accounts",
+        "status": "not_run",
+        "method": "not_run",
+        "error": "本轮没有逐账号核验sources.json中的全部X固定及动态账号。"
+      },
+      {
+        "id": "x_index_shadolabo",
+        "status": "verified",
+        "checked_at": "2026-08-28T12:20:00+08:00",
+        "method": "direct_page_review",
+        "evidence_url": "https://svlabo.jp/blog-entry-1894.html",
+        "result": "记录第9弹公开连胜构筑帖聚类；计数不解释为胜率。"
+      },
+      {
+        "id": "x_index_shadowverse_wins",
+        "status": "verified",
+        "checked_at": "2026-08-28T12:40:00+08:00",
+        "method": "direct_page_review",
+        "evidence_url": "https://shadowverse-wins.com/",
+        "result": "回链并去重具体构筑页、发帖账号和连胜描述。"
+      },
+      {
+        "id": "deck_recipe_verification",
+        "status": "verified",
+        "checked_at": "2026-08-28T14:53:37+08:00",
+        "method": "official_deck_page",
+        "evidence_url": "https://shadowverse-wb.com/ja/deck/",
+        "result": "候选构筑均保存可打开的官方40张链接；官网仅作牌表证据。"
+      },
+      {
+        "id": "matchup_direction_review",
+        "status": "verified",
+        "checked_at": "2026-08-28T14:53:37+08:00",
+        "method": "direct_post_pair_review",
+        "evidence_url": "https://shadowverse-wins.com/",
+        "result": "形成3条两来源同向互证的B级克制边；没有分对局矩阵，等级封顶B。"
+      }
+    ]
   },
   "sources": [
     {
@@ -65,7 +224,7 @@
       "id": "bilibili_topic_search",
       "label": "B站：超凡世界主题检索",
       "url": "https://search.bilibili.com/all?keyword=%E8%B6%85%E5%87%A1%E4%B8%96%E7%95%8C",
-      "observed_at": "2026-08-28T14:53:37+08:00",
+      "observed_at": "2026-08-28T15:24:23+08:00",
       "definition": "用于观察视频标题、作者与发布时间形成的内容扩散，不把播放量解释为卡组强度。"
     },
     {
@@ -241,15 +400,15 @@
     {"id": "str-bishop-tomoda", "archetype_id": "sinner_bishop", "variant_scope": "evolution_sinner", "independent_group": "PolngaxNagi", "source_url": "https://x.com/PolngaxNagi/status/2093021565327945823", "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107817", "result": "进化主教9连胜；正文点名艾尔拉德", "quality": "direct_x_post"}
   ],
   "bilibili_accounts": [
-    {"creator": "星野饼美", "uid": "82389", "status": "checked", "latest_relevant": "罪人奥义主教卡组视频（BV1GYtF6ZEHj，07:39发布）", "deck_push_after_release": true, "profile_url": "https://space.bilibili.com/82389"},
-    {"creator": "yokidou", "uid": "546495", "status": "checked", "latest_relevant": "第9弹全卡点评", "deck_push_after_release": false, "profile_url": "https://space.bilibili.com/546495"},
-    {"creator": "美少女莉莉猪", "uid": "473097569", "status": "unverified", "latest_relevant": "账号级最新稿件未稳定读取", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/473097569"},
-    {"creator": "一只小吾影", "uid": "169172902", "status": "checked", "latest_relevant": "当前可见直播，未确认新包具体卡组视频", "deck_push_after_release": false, "profile_url": "https://space.bilibili.com/169172902"},
-    {"creator": "章鱼哥official", "uid": "429920", "status": "checked", "latest_relevant": "第九弹环境开荒直播", "deck_push_after_release": false, "profile_url": "https://space.bilibili.com/429920"},
-    {"creator": "NightVine", "uid": "307980", "status": "checked", "latest_relevant": "上线前试玩预组宇宙鱼；未确认上线后具体卡组视频", "deck_push_after_release": false, "profile_url": "https://space.bilibili.com/307980"},
-    {"creator": "璐缇雅Official", "uid": "1472898403", "status": "unverified", "latest_relevant": "账号级最新稿件未稳定读取", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/1472898403"},
-    {"creator": "天宇技师Zty", "uid": "157278", "status": "unverified", "latest_relevant": "账号级最新稿件未稳定读取", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/157278"},
-    {"creator": "暴风魚", "uid": "22479410", "status": "checked", "latest_relevant": "未确认上线后的具体卡组推荐", "deck_push_after_release": false, "profile_url": "https://space.bilibili.com/22479410"}
+    {"creator": "星野饼美", "uid": "82389", "status": "verified", "latest_relevant": "罪人奥义主教卡组视频（BV1GYtF6ZEHj，07:39发布）", "deck_push_after_release": true, "profile_url": "https://space.bilibili.com/82389"},
+    {"creator": "yokidou", "uid": "546495", "status": "blocked", "latest_relevant": "账号投稿接口被风控，最新稿件未知", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/546495"},
+    {"creator": "美少女莉莉猪", "uid": "473097569", "status": "blocked", "latest_relevant": "账号投稿接口被风控，最新稿件未知", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/473097569"},
+    {"creator": "一只小吾影", "uid": "169172902", "status": "blocked", "latest_relevant": "账号投稿接口被风控，最新稿件未知", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/169172902"},
+    {"creator": "章鱼哥official", "uid": "429920", "status": "blocked", "latest_relevant": "账号投稿接口被风控，最新稿件未知", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/429920"},
+    {"creator": "NightVine", "uid": "307980", "status": "partial", "latest_relevant": "搜索请求成功但无精确作者匹配，最新稿件仍未知", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/307980"},
+    {"creator": "璐缇雅Official", "uid": "1472898403", "status": "verified", "latest_relevant": "8月27日国际BO10比赛视频（BV1pb8o6yEqu，非卡组推荐）", "deck_push_after_release": false, "profile_url": "https://space.bilibili.com/1472898403"},
+    {"creator": "天宇技师Zty", "uid": "157278", "status": "blocked", "latest_relevant": "账号投稿接口被风控，最新稿件未知", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/157278"},
+    {"creator": "暴风魚", "uid": "22479410", "status": "blocked", "latest_relevant": "账号投稿接口被风控，最新稿件未知", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/22479410"}
   ],
   "bilibili_observations": [
     {
@@ -428,20 +587,20 @@
       "title": "【饼之诗】罪人奥义主教，依靠超强苟活驰骋环境！【影之诗超凡世界】",
       "published_label": "2026-08-28 07:39",
       "published_at": "2026-08-28T07:39:45+08:00",
-      "observed_at": "2026-08-28T14:53:37+08:00",
+      "observed_at": "2026-08-28T15:24:23+08:00",
       "content_type": "deck_video",
       "archetype_ids": ["sinner_bishop"],
       "independent_group": "星野饼美",
       "source_url": "https://www.bilibili.com/video/BV1GYtF6ZEHj/",
       "source_id": "bilibili_sinner_bishop_video",
       "distribution_role": "高影响力卡组推荐",
-      "view_count_observed": 28985,
+      "view_count_observed": 29887,
       "creator_followers_observed": 200124,
       "creator_influence": "高（20.0万粉）",
       "deck_long_code": "1.6.dhqm.dhqm.dhqm.fRes.fRes.fRes.dv-s.dv-s.dwVg.dwVg.dwVg.f3lA.f3lA.f3lA.eJ8E.eJ8E.eJ8E.fSNu.fSNu.fSNu.di4E.di4E.di4E.fRue.fRue.fRue.fqoE.fqoE.fqoE.fqaA.fqaA.fqaA.fSNk.fSNk.fSNk.fqYc.fqYc.fqYc.fDkO.fDkO",
       "author_strength_claim": "奥义教预计T1~T2，慎合",
       "named_seed": true,
-      "note": "约7.2小时达到28,985播放，属于高曝光、快速扩散中；简介长码已核验为40张。作者T1~T2判断不计作独立强度实绩。"
+      "note": "约7.7小时达到29,887播放，属于高曝光、快速扩散中；简介长码已核验为40张。作者T1~T2判断不计作独立强度实绩。"
     },
     {
       "id": "bili-star-balance",

@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "timezone": "Asia/Hong_Kong",
+  "freshness_hours": 24,
+  "policy": {
+    "publish_when_sources_blocked": true,
+    "allow_actionable_recommendation_only_when_all_critical_checks_verified": true,
+    "blocked_semantics": "接口风控、验证码或超时一律记为未知，不得解释为没有更新。",
+    "no_result_semantics": "只有精确 UID/账号页已成功读取且覆盖观察窗口时，才可记录没有相关新稿件。"
+  },
+  "checks": [
+    {
+      "id": "bili_account_82389",
+      "label": "B站账号：星野饼美",
+      "platform": "bilibili",
+      "kind": "named_account",
+      "source_id": "bili:82389",
+      "account_uid": "82389",
+      "critical": true,
+      "method_order": ["account_archive_by_uid", "site_search_exact_uid", "profile_manual_review"]
+    },
+    {
+      "id": "bili_account_546495",
+      "label": "B站账号：yokidou",
+      "platform": "bilibili",
+      "kind": "named_account",
+      "source_id": "bili:546495",
+      "account_uid": "546495",
+      "critical": true,
+      "method_order": ["account_archive_by_uid", "site_search_exact_uid", "profile_manual_review"]
+    },
+    {
+      "id": "bili_account_473097569",
+      "label": "B站账号：美少女莉莉猪",
+      "platform": "bilibili",
+      "kind": "named_account",
+      "source_id": "bili:473097569",
+      "account_uid": "473097569",
+      "critical": true,
+      "method_order": ["account_archive_by_uid", "site_search_exact_uid", "profile_manual_review"]
+    },
+    {
+      "id": "bili_account_169172902",
+      "label": "B站账号：一只小吾影",
+      "platform": "bilibili",
+      "kind": "named_account",
+      "source_id": "bili:169172902",
+      "account_uid": "169172902",
+      "critical": true,
+      "method_order": ["account_archive_by_uid", "site_search_exact_uid", "profile_manual_review"]
+    },
+    {
+      "id": "bili_account_429920",
+      "label": "B站账号：章鱼哥official",
+      "platform": "bilibili",
+      "kind": "named_account",
+      "source_id": "bili:429920",
+      "account_uid": "429920",
+      "critical": true,
+      "method_order": ["account_archive_by_uid", "site_search_exact_uid", "profile_manual_review"]
+    },
+    {
+      "id": "bili_account_307980",
+      "label": "B站账号：NightVine",
+      "platform": "bilibili",
+      "kind": "named_account",
+      "source_id": "bili:307980",
+      "account_uid": "307980",
+      "critical": true,
+      "method_order": ["account_archive_by_uid", "site_search_exact_uid", "profile_manual_review"]
+    },
+    {
+      "id": "bili_account_1472898403",
+      "label": "B站账号：璐缇雅Official",
+      "platform": "bilibili",
+      "kind": "named_account",
+      "source_id": "bili:1472898403",
+      "account_uid": "1472898403",
+      "critical": true,
+      "method_order": ["account_archive_by_uid", "site_search_exact_uid", "profile_manual_review"]
+    },
+    {
+      "id": "bili_account_157278",
+      "label": "B站账号：天宇技师Zty",
+      "platform": "bilibili",
+      "kind": "named_account",
+      "source_id": "bili:157278",
+      "account_uid": "157278",
+      "critical": true,
+      "method_order": ["account_archive_by_uid", "site_search_exact_uid", "profile_manual_review"]
+    },
+    {
+      "id": "bili_account_22479410",
+      "label": "B站账号：暴风魚",
+      "platform": "bilibili",
+      "kind": "named_account",
+      "source_id": "bili:22479410",
+      "account_uid": "22479410",
+      "critical": true,
+      "method_order": ["account_archive_by_uid", "site_search_exact_uid", "profile_manual_review"]
+    },
+    {
+      "id": "bili_search_topic",
+      "label": "B站全站：影之诗 超凡世界",
+      "platform": "bilibili",
+      "kind": "discovery_search",
+      "query": "影之诗 超凡世界",
+      "critical": true,
+      "method_order": ["site_search_sorted_by_date"]
+    },
+    {
+      "id": "bili_search_archetypes",
+      "label": "B站全站：当日全部追踪体系",
+      "platform": "bilibili",
+      "kind": "archetype_search_set",
+      "query_rule": "对 meta_presence 和候选推荐中的每个体系，用中文名及常用别名分别检索并按发布时间排序。",
+      "critical": true,
+      "method_order": ["site_search_sorted_by_date"]
+    },
+    {
+      "id": "x_recent_jp",
+      "label": "X Recent Search：日文构筑与连胜",
+      "platform": "x",
+      "kind": "discovery_search",
+      "query_id": "jp_core_deck_results",
+      "critical": true,
+      "method_order": ["official_x_recent_search", "public_index_review"]
+    },
+    {
+      "id": "x_recent_global",
+      "label": "X Recent Search：英文构筑与连胜",
+      "platform": "x",
+      "kind": "discovery_search",
+      "query_id": "global_core_deck_results",
+      "critical": true,
+      "method_order": ["official_x_recent_search", "public_index_review"]
+    },
+    {
+      "id": "x_seed_accounts",
+      "label": "X 固定及未过期动态账号清单",
+      "platform": "x",
+      "kind": "source_registry_set",
+      "source_selector": "config/sources.json 中 platform=x 且未过期的全部账号；逐账号记录，不以聚合页代替。",
+      "critical": true,
+      "method_order": ["official_x_recent_search_from_account", "public_profile_review"]
+    },
+    {
+      "id": "x_index_shadolabo",
+      "label": "ShadoLabo 环境聚类",
+      "platform": "web",
+      "kind": "aggregator",
+      "source_id": "x:sv_labo",
+      "critical": true,
+      "method_order": ["direct_page_review"]
+    },
+    {
+      "id": "x_index_shadowverse_wins",
+      "label": "Shadowverse Wins 构筑索引",
+      "platform": "web",
+      "kind": "aggregator",
+      "source_id": "x:shadowversewins",
+      "critical": true,
+      "method_order": ["direct_page_review"]
+    },
+    {
+      "id": "deck_recipe_verification",
+      "label": "候选卡组的具体40张核验",
+      "platform": "official_site",
+      "kind": "recipe_verification",
+      "critical": true,
+      "method_order": ["official_deck_page"]
+    },
+    {
+      "id": "matchup_direction_review",
+      "label": "候选卡组与主流目标的克制方向复核",
+      "platform": "cross_source",
+      "kind": "matchup_review",
+      "critical": true,
+      "method_order": ["direct_post_pair_review", "player_match_log_review"]
+    }
+  ]
+}
