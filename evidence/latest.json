@@ -1,9 +1,12 @@
 {
   "schema_version": 2,
   "report_date": "2026-08-28",
-  "generated_at": "2026-08-28T15:24:23+08:00",
+  "generated_at": "2026-08-28T16:08:56+08:00",
   "game": "影之诗：超凡世界",
   "environment": "第9弹卡包「复苏的阿兹弗特」上线第2天",
+  "collection_parameters": {
+    "bilibili_since": "2026-08-27T00:00:00+08:00"
+  },
   "public_url": "https://ayoo-yu.github.io/shadowverse-worlds-beyond-daily/",
   "feedback_url": "https://github.com/Ayoo-Yu/shadowverse-worlds-beyond-daily/issues/new?template=matchup-feedback.yml",
   "decision_policy": {
@@ -20,12 +23,12 @@
       "note": "用 Shadowverse Wins、ShadoLabo 与 Yahoo!实时检索复核公开帖；未接入 X 官方全量流。"
     },
     "bilibili": {
-      "status": "partial",
-      "window": "截至 2026-08-28 15:24 +08:00",
+      "status": "complete",
+      "window": "截至 2026-08-28 16:08 +0800",
       "named_accounts": 9,
-      "checked_accounts": 2,
-      "unverified_accounts": 7,
-      "note": "逐 UID 审计后仅星野饼美与璐缇雅Official完成可复核读取；NightVine为部分覆盖，其余6个账号被412/-799风控阻断。未知不按无更新处理，本轮推荐模式降为 provisional。"
+      "checked_accounts": 9,
+      "unverified_accounts": 0,
+      "note": "按UID执行账号投稿接口并回退到站内搜索精确UID匹配；verified=9。读取成功只证明公开元数据覆盖，窗口内新内容仍须完成卡组分类。"
     },
     "matchups": {
       "status": "self_report_only",
@@ -34,90 +37,102 @@
   },
   "collection_audit": {
     "workflow_version": 1,
-    "run_id": "2026-08-28T15-24-23+08-00",
+    "run_id": "2026-08-28T16-08-56+08-00",
     "started_at": "2026-08-28T14:53:37+08:00",
-    "completed_at": "2026-08-28T15:24:23+08:00",
+    "completed_at": "2026-08-28T16:08:56+08:00",
     "checks": [
       {
         "id": "bili_account_82389",
         "status": "verified",
-        "checked_at": "2026-08-28T15:24:23+08:00",
-        "method": "direct_video_metadata_and_exact_account_match",
+        "checked_at": "2026-08-28T16:08:56+08:00",
+        "method": "site_search_exact_uid",
         "account_uid": "82389",
         "evidence_url": "https://www.bilibili.com/video/BV1GYtF6ZEHj/",
-        "result": "确认上线后发布罪人奥义主教具体卡组视频。"
+        "coverage_basis": "exact_uid_public_search_index",
+        "result": "读取41条精确UID稿件；最新为2026-08-28T07:39:45+08:00《【饼之诗】罪人奥义主教，依靠超强苟活驰骋环境！【影之诗超凡世界】》。"
       },
       {
         "id": "bili_account_546495",
-        "status": "blocked",
-        "checked_at": "2026-08-28T15:24:23+08:00",
-        "method": "account_archive_api_then_site_search",
+        "status": "verified",
+        "checked_at": "2026-08-28T16:08:56+08:00",
+        "method": "site_search_exact_uid",
         "account_uid": "546495",
-        "evidence_url": "https://space.bilibili.com/546495",
-        "error": "账号投稿接口返回412/-799，站内搜索回退未完成精确UID核验；结果未知。"
+        "evidence_url": "https://www.bilibili.com/video/BV1hWhc6eEm9/",
+        "coverage_basis": "exact_uid_public_search_index",
+        "result": "读取19条精确UID稿件；最新为2026-08-27T10:34:07+08:00《【影之诗·超凡世界】「复苏的阿兹弗特」全卡点评！》。"
       },
       {
         "id": "bili_account_473097569",
-        "status": "blocked",
-        "checked_at": "2026-08-28T15:24:23+08:00",
-        "method": "account_archive_api_then_site_search",
+        "status": "verified",
+        "checked_at": "2026-08-28T16:08:56+08:00",
+        "method": "site_search_exact_uid",
         "account_uid": "473097569",
-        "evidence_url": "https://space.bilibili.com/473097569",
-        "error": "账号投稿接口返回412/-799，站内搜索回退未完成精确UID核验；结果未知。"
+        "evidence_url": "https://www.bilibili.com/video/BV17Ug56AE9z/",
+        "coverage_basis": "exact_uid_public_search_index",
+        "result": "读取25条精确UID稿件；最新为2026-08-12T18:02:59+08:00《【猪之诗】奥义皇家，赖着不死就能赢？！？！【影之诗超凡世界】》。"
       },
       {
         "id": "bili_account_169172902",
-        "status": "blocked",
-        "checked_at": "2026-08-28T15:24:23+08:00",
-        "method": "account_archive_api_then_site_search",
+        "status": "verified",
+        "checked_at": "2026-08-28T16:08:56+08:00",
+        "method": "account_archive_by_uid",
         "account_uid": "169172902",
-        "evidence_url": "https://space.bilibili.com/169172902",
-        "error": "账号投稿接口返回412/-799，站内搜索回退未完成精确UID核验；结果未知。"
+        "evidence_url": "https://www.bilibili.com/video/BV1YQtc6eECG/",
+        "coverage_basis": "direct_account_archive",
+        "result": "读取20条精确UID稿件；最新为2026-08-28T13:04:44+08:00《【直播回放】九转白银掌控雷电 2026年08月18日22点场》。"
       },
       {
         "id": "bili_account_429920",
-        "status": "blocked",
-        "checked_at": "2026-08-28T15:24:23+08:00",
-        "method": "account_archive_api_then_site_search",
+        "status": "verified",
+        "checked_at": "2026-08-28T16:08:56+08:00",
+        "method": "account_archive_by_uid",
         "account_uid": "429920",
-        "evidence_url": "https://space.bilibili.com/429920",
-        "error": "账号投稿接口返回412/-799，站内搜索回退未完成精确UID核验；结果未知。"
+        "evidence_url": "https://www.bilibili.com/video/BV1Yy4o6XEdh/",
+        "coverage_basis": "direct_account_archive",
+        "result": "读取20条精确UID稿件；最新为2026-08-28T06:02:49+08:00《【第九弹开荒】实验法 章鱼哥全程GM达成！》。"
       },
       {
         "id": "bili_account_307980",
-        "status": "partial",
-        "checked_at": "2026-08-28T15:24:23+08:00",
-        "method": "site_search_exact_name",
+        "status": "verified",
+        "checked_at": "2026-08-28T15:53:01+08:00",
+        "method": "account_archive_by_uid",
         "account_uid": "307980",
-        "evidence_url": "https://search.bilibili.com/all?keyword=NightVine&order=pubdate",
-        "error": "搜索请求成功但没有返回可用的精确作者匹配，无法证明账号观察窗口完整；结果未知。"
+        "evidence_url": "https://www.bilibili.com/video/BV1YfjY6fEJE/",
+        "coverage_basis": "direct_account_archive",
+        "result": "读取20条精确UID稿件；最新为2026-06-19T04:16:18+08:00《【影之诗周年庆大乱斗】爆爆爆！恩人师徒现场互怼，红发直言奈特温人品不行》。",
+        "attempted_at": "2026-08-28T16:08:56+08:00",
+        "live_method": "site_search_exact_uid",
+        "live_error": "Bilibili returned HTTP 412; site search returned no exact UID matches"
       },
       {
         "id": "bili_account_1472898403",
         "status": "verified",
-        "checked_at": "2026-08-28T15:24:23+08:00",
-        "method": "site_search_exact_author_and_uid",
+        "checked_at": "2026-08-28T16:08:56+08:00",
+        "method": "site_search_exact_uid",
         "account_uid": "1472898403",
         "evidence_url": "https://www.bilibili.com/video/BV1pb8o6yEqu/",
-        "result": "最新可见稿件为8月27日国际BO10比赛视频，不是具体卡组推荐。"
+        "coverage_basis": "exact_uid_public_search_index",
+        "result": "读取47条精确UID稿件；最新为2026-08-27T11:00:00+08:00《【国际BO10】跨境争锋 跨服3V3团体对抗赛 国服3VS国际服2》。"
       },
       {
         "id": "bili_account_157278",
-        "status": "blocked",
-        "checked_at": "2026-08-28T15:24:23+08:00",
-        "method": "account_archive_api_then_site_search",
+        "status": "verified",
+        "checked_at": "2026-08-28T16:08:56+08:00",
+        "method": "site_search_exact_uid",
         "account_uid": "157278",
-        "evidence_url": "https://space.bilibili.com/157278",
-        "error": "账号投稿接口返回412/-799，站内搜索回退未完成精确UID核验；结果未知。"
+        "evidence_url": "https://www.bilibili.com/video/BV12t5t6ZEb8/",
+        "coverage_basis": "exact_uid_public_search_index",
+        "result": "读取50条精确UID稿件；最新为2026-05-11T22:00:25+08:00《【影之诗】猴子都能会的二妹超》。"
       },
       {
         "id": "bili_account_22479410",
-        "status": "blocked",
-        "checked_at": "2026-08-28T15:24:23+08:00",
-        "method": "account_archive_api_then_site_search",
+        "status": "verified",
+        "checked_at": "2026-08-28T16:08:56+08:00",
+        "method": "account_archive_by_uid",
         "account_uid": "22479410",
-        "evidence_url": "https://space.bilibili.com/22479410",
-        "error": "账号投稿接口返回412/-799，站内搜索回退未完成精确UID核验；结果未知。"
+        "evidence_url": "https://www.bilibili.com/video/BV11t8m6WEeZ/",
+        "coverage_basis": "direct_account_archive",
+        "result": "读取20条精确UID稿件；最新为2026-08-22T19:20:39+08:00《看一局少一局的逆天对局丨小众变态影之诗对局》。"
       },
       {
         "id": "bili_search_topic",
@@ -249,6 +264,13 @@
       "definition": "用于核验国服B站上的新版本实验体法卡组视频、独立创作者与观察时播放量；不代表实际使用率。"
     },
     {
+      "id": "bilibili_octopus_experiment_run",
+      "label": "章鱼哥official：实验法全程GM录像",
+      "url": "https://www.bilibili.com/video/BV1Yy4o6XEdh/",
+      "observed_at": "2026-08-28T16:02:58+08:00",
+      "definition": "直接核验作者UID、标题、发布时间、分P与观察播放量；只计作实验法在国服的内容扩散，不把GM标题当作可独立复核的胜率或固定40张证据。"
+    },
+    {
       "id": "bilibili_sinner_bishop_video",
       "label": "星野饼美：罪人奥义主教卡组视频",
       "url": "https://www.bilibili.com/video/BV1GYtF6ZEHj/",
@@ -257,12 +279,49 @@
     }
   ],
   "meta_presence": [
-    {"archetype_id": "midrange_nightmare", "archetype": "中速梦魇", "winning_posts": 9, "rank": 1, "source_id": "shadolabo_counts"},
-    {"archetype_id": "pirate_royal", "archetype": "海盗皇家", "winning_posts": 7, "rank": 2, "source_id": "shadolabo_counts"},
-    {"archetype_id": "artifact_nemesis", "archetype": "造物超越者（AF）", "winning_posts": 6, "rank": 3, "source_id": "shadolabo_counts"},
-    {"archetype_id": "sinner_bishop", "archetype": "罪人／进化主教", "winning_posts": 5, "rank": 4, "source_id": "shadowverse_wins", "count_scope": "同日页面中明确写作进化主教的连胜帖下限"},
-    {"archetype_id": "aggro_nightmare", "archetype": "快攻梦魇", "winning_posts": 3, "rank": 5, "source_id": "shadolabo_counts"},
-    {"archetype_id": "experiment_witch", "archetype": "实验体／瑟菲法", "winning_posts": 2, "rank": 6, "source_id": "shadolabo_counts"}
+    {
+      "archetype_id": "midrange_nightmare",
+      "archetype": "中速梦魇",
+      "winning_posts": 9,
+      "rank": 1,
+      "source_id": "shadolabo_counts"
+    },
+    {
+      "archetype_id": "pirate_royal",
+      "archetype": "海盗皇家",
+      "winning_posts": 7,
+      "rank": 2,
+      "source_id": "shadolabo_counts"
+    },
+    {
+      "archetype_id": "artifact_nemesis",
+      "archetype": "造物超越者（AF）",
+      "winning_posts": 6,
+      "rank": 3,
+      "source_id": "shadolabo_counts"
+    },
+    {
+      "archetype_id": "sinner_bishop",
+      "archetype": "罪人／进化主教",
+      "winning_posts": 5,
+      "rank": 4,
+      "source_id": "shadowverse_wins",
+      "count_scope": "同日页面中明确写作进化主教的连胜帖下限"
+    },
+    {
+      "archetype_id": "aggro_nightmare",
+      "archetype": "快攻梦魇",
+      "winning_posts": 3,
+      "rank": 5,
+      "source_id": "shadolabo_counts"
+    },
+    {
+      "archetype_id": "experiment_witch",
+      "archetype": "实验体／瑟菲法",
+      "winning_posts": 2,
+      "rank": 6,
+      "source_id": "shadolabo_counts"
+    }
   ],
   "decks": [
     {
@@ -383,32 +442,240 @@
     }
   ],
   "strength_evidence": [
-    {"id": "str-af-utatomo", "archetype_id": "artifact_nemesis", "variant_scope": "artifact", "independent_group": "Utatomo", "source_url": "https://x.com/utatomo_sv/status/2092941348928405768", "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107694", "result": "17连胜", "quality": "direct_x_post"},
-    {"id": "str-af-gel", "archetype_id": "artifact_nemesis", "variant_scope": "artifact", "independent_group": "Stonebridge gel", "source_url": "https://x.com/gelrj9e6/status/2093042343775768892", "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107800", "result": "17连胜", "quality": "direct_x_post"},
-    {"id": "str-af-kamuku", "archetype_id": "artifact_nemesis", "variant_scope": "artifact", "independent_group": "KAMUKU60", "source_url": "https://x.com/KAMUKU60/status/2092936618995048888", "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107678", "result": "10连胜", "quality": "direct_x_post"},
-    {"id": "str-mid-keniwo", "archetype_id": "midrange_nightmare", "variant_scope": "midrange", "independent_group": "Keniwo", "source_url": "https://x.com/Keniwo0428/status/2093023414458204387", "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107813", "result": "10连胜", "quality": "direct_x_post"},
-    {"id": "str-mid-kanata", "archetype_id": "midrange_nightmare", "variant_scope": "midrange", "independent_group": "Kanata_poe0518", "source_url": "https://x.com/Kanata_poe0518/status/2092990391234826370", "result": "30局23胜7负", "quality": "direct_x_post_with_overall_sample"},
-    {"id": "str-exp-m1", "archetype_id": "experiment_witch", "variant_scope": "experiment_sefie", "independent_group": "M1kumomo", "source_url": "https://shadowverse-wins.com/single.php?manageId=107775", "result": "10连胜", "quality": "direct_deck_page"},
-    {"id": "str-exp-syu", "archetype_id": "experiment_witch", "variant_scope": "experiment_sefie", "independent_group": "Syu", "source_url": "https://shadowverse-wins.com/single.php?manageId=107801", "result": "17连胜", "quality": "direct_deck_page"},
-    {"id": "str-exp-figole", "archetype_id": "experiment_witch", "variant_scope": "experiment_hybrid", "independent_group": "Figole1436", "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&nobtl=1&p=%E3%82%A6%E3%82%A3%E3%83%83%E3%83%81+%E9%80%A3%E5%8B%9D&rkf=1", "result": "16连胜", "quality": "search_excerpt"},
-    {"id": "str-exp-cags", "archetype_id": "experiment_witch", "variant_scope": "experiment_sefie", "independent_group": "Cags", "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&nobtl=1&p=%E3%82%A6%E3%82%A3%E3%83%83%E3%83%83%E3%83%81+%E9%80%A3%E5%8B%9D&rkf=1", "result": "17连胜", "quality": "search_excerpt"},
-    {"id": "str-pirate-amano", "archetype_id": "pirate_royal", "variant_scope": "pirate", "independent_group": "Amano", "source_url": "https://shadowverse-wins.com/single.php?manageId=107672", "result": "12连胜", "quality": "direct_deck_page"},
-    {"id": "str-treasure-uocha", "archetype_id": "treasure_royal", "variant_scope": "treasure", "independent_group": "u0u0_cha", "source_url": "https://shadowverse-wins.com/single.php?manageId=107695", "result": "7连胜", "quality": "direct_deck_page"},
-    {"id": "str-aggro-owa", "archetype_id": "aggro_nightmare", "variant_scope": "aggro", "independent_group": "owaowano_mi", "source_url": "https://shadowverse-wins.com/single.php?manageId=107816", "result": "16连胜", "quality": "direct_deck_page"},
-    {"id": "str-bishop-au", "archetype_id": "sinner_bishop", "variant_scope": "evolution_sinner", "independent_group": "Shado_04300016", "source_url": "https://x.com/Shado_04300016/status/2093092041903476765", "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107778", "result": "进化主教16连胜；正文点名托鲁与艾尔拉德", "quality": "direct_x_post"},
-    {"id": "str-bishop-ebihara", "archetype_id": "sinner_bishop", "variant_scope": "evolution_sinner", "independent_group": "CASTER_ebibkw", "source_url": "https://x.com/CASTER_ebibkw/status/2092988893750865946", "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107742", "result": "进化主教12连胜；正文点名艾尔拉德与桑达尔芬", "quality": "direct_x_post"},
-    {"id": "str-bishop-tomoda", "archetype_id": "sinner_bishop", "variant_scope": "evolution_sinner", "independent_group": "PolngaxNagi", "source_url": "https://x.com/PolngaxNagi/status/2093021565327945823", "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107817", "result": "进化主教9连胜；正文点名艾尔拉德", "quality": "direct_x_post"}
+    {
+      "id": "str-af-utatomo",
+      "archetype_id": "artifact_nemesis",
+      "variant_scope": "artifact",
+      "independent_group": "Utatomo",
+      "source_url": "https://x.com/utatomo_sv/status/2092941348928405768",
+      "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107694",
+      "result": "17连胜",
+      "quality": "direct_x_post"
+    },
+    {
+      "id": "str-af-gel",
+      "archetype_id": "artifact_nemesis",
+      "variant_scope": "artifact",
+      "independent_group": "Stonebridge gel",
+      "source_url": "https://x.com/gelrj9e6/status/2093042343775768892",
+      "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107800",
+      "result": "17连胜",
+      "quality": "direct_x_post"
+    },
+    {
+      "id": "str-af-kamuku",
+      "archetype_id": "artifact_nemesis",
+      "variant_scope": "artifact",
+      "independent_group": "KAMUKU60",
+      "source_url": "https://x.com/KAMUKU60/status/2092936618995048888",
+      "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107678",
+      "result": "10连胜",
+      "quality": "direct_x_post"
+    },
+    {
+      "id": "str-mid-keniwo",
+      "archetype_id": "midrange_nightmare",
+      "variant_scope": "midrange",
+      "independent_group": "Keniwo",
+      "source_url": "https://x.com/Keniwo0428/status/2093023414458204387",
+      "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107813",
+      "result": "10连胜",
+      "quality": "direct_x_post"
+    },
+    {
+      "id": "str-mid-kanata",
+      "archetype_id": "midrange_nightmare",
+      "variant_scope": "midrange",
+      "independent_group": "Kanata_poe0518",
+      "source_url": "https://x.com/Kanata_poe0518/status/2092990391234826370",
+      "result": "30局23胜7负",
+      "quality": "direct_x_post_with_overall_sample"
+    },
+    {
+      "id": "str-exp-m1",
+      "archetype_id": "experiment_witch",
+      "variant_scope": "experiment_sefie",
+      "independent_group": "M1kumomo",
+      "source_url": "https://shadowverse-wins.com/single.php?manageId=107775",
+      "result": "10连胜",
+      "quality": "direct_deck_page"
+    },
+    {
+      "id": "str-exp-syu",
+      "archetype_id": "experiment_witch",
+      "variant_scope": "experiment_sefie",
+      "independent_group": "Syu",
+      "source_url": "https://shadowverse-wins.com/single.php?manageId=107801",
+      "result": "17连胜",
+      "quality": "direct_deck_page"
+    },
+    {
+      "id": "str-exp-figole",
+      "archetype_id": "experiment_witch",
+      "variant_scope": "experiment_hybrid",
+      "independent_group": "Figole1436",
+      "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&nobtl=1&p=%E3%82%A6%E3%82%A3%E3%83%83%E3%83%81+%E9%80%A3%E5%8B%9D&rkf=1",
+      "result": "16连胜",
+      "quality": "search_excerpt"
+    },
+    {
+      "id": "str-exp-cags",
+      "archetype_id": "experiment_witch",
+      "variant_scope": "experiment_sefie",
+      "independent_group": "Cags",
+      "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&nobtl=1&p=%E3%82%A6%E3%82%A3%E3%83%83%E3%83%83%E3%83%81+%E9%80%A3%E5%8B%9D&rkf=1",
+      "result": "17连胜",
+      "quality": "search_excerpt"
+    },
+    {
+      "id": "str-pirate-amano",
+      "archetype_id": "pirate_royal",
+      "variant_scope": "pirate",
+      "independent_group": "Amano",
+      "source_url": "https://shadowverse-wins.com/single.php?manageId=107672",
+      "result": "12连胜",
+      "quality": "direct_deck_page"
+    },
+    {
+      "id": "str-treasure-uocha",
+      "archetype_id": "treasure_royal",
+      "variant_scope": "treasure",
+      "independent_group": "u0u0_cha",
+      "source_url": "https://shadowverse-wins.com/single.php?manageId=107695",
+      "result": "7连胜",
+      "quality": "direct_deck_page"
+    },
+    {
+      "id": "str-aggro-owa",
+      "archetype_id": "aggro_nightmare",
+      "variant_scope": "aggro",
+      "independent_group": "owaowano_mi",
+      "source_url": "https://shadowverse-wins.com/single.php?manageId=107816",
+      "result": "16连胜",
+      "quality": "direct_deck_page"
+    },
+    {
+      "id": "str-bishop-au",
+      "archetype_id": "sinner_bishop",
+      "variant_scope": "evolution_sinner",
+      "independent_group": "Shado_04300016",
+      "source_url": "https://x.com/Shado_04300016/status/2093092041903476765",
+      "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107778",
+      "result": "进化主教16连胜；正文点名托鲁与艾尔拉德",
+      "quality": "direct_x_post"
+    },
+    {
+      "id": "str-bishop-ebihara",
+      "archetype_id": "sinner_bishop",
+      "variant_scope": "evolution_sinner",
+      "independent_group": "CASTER_ebibkw",
+      "source_url": "https://x.com/CASTER_ebibkw/status/2092988893750865946",
+      "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107742",
+      "result": "进化主教12连胜；正文点名艾尔拉德与桑达尔芬",
+      "quality": "direct_x_post"
+    },
+    {
+      "id": "str-bishop-tomoda",
+      "archetype_id": "sinner_bishop",
+      "variant_scope": "evolution_sinner",
+      "independent_group": "PolngaxNagi",
+      "source_url": "https://x.com/PolngaxNagi/status/2093021565327945823",
+      "mirror_url": "https://shadowverse-wins.com/single.php?manageId=107817",
+      "result": "进化主教9连胜；正文点名艾尔拉德",
+      "quality": "direct_x_post"
+    }
   ],
   "bilibili_accounts": [
-    {"creator": "星野饼美", "uid": "82389", "status": "verified", "latest_relevant": "罪人奥义主教卡组视频（BV1GYtF6ZEHj，07:39发布）", "deck_push_after_release": true, "profile_url": "https://space.bilibili.com/82389"},
-    {"creator": "yokidou", "uid": "546495", "status": "blocked", "latest_relevant": "账号投稿接口被风控，最新稿件未知", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/546495"},
-    {"creator": "美少女莉莉猪", "uid": "473097569", "status": "blocked", "latest_relevant": "账号投稿接口被风控，最新稿件未知", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/473097569"},
-    {"creator": "一只小吾影", "uid": "169172902", "status": "blocked", "latest_relevant": "账号投稿接口被风控，最新稿件未知", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/169172902"},
-    {"creator": "章鱼哥official", "uid": "429920", "status": "blocked", "latest_relevant": "账号投稿接口被风控，最新稿件未知", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/429920"},
-    {"creator": "NightVine", "uid": "307980", "status": "partial", "latest_relevant": "搜索请求成功但无精确作者匹配，最新稿件仍未知", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/307980"},
-    {"creator": "璐缇雅Official", "uid": "1472898403", "status": "verified", "latest_relevant": "8月27日国际BO10比赛视频（BV1pb8o6yEqu，非卡组推荐）", "deck_push_after_release": false, "profile_url": "https://space.bilibili.com/1472898403"},
-    {"creator": "天宇技师Zty", "uid": "157278", "status": "blocked", "latest_relevant": "账号投稿接口被风控，最新稿件未知", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/157278"},
-    {"creator": "暴风魚", "uid": "22479410", "status": "blocked", "latest_relevant": "账号投稿接口被风控，最新稿件未知", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/22479410"}
+    {
+      "creator": "星野饼美",
+      "uid": "82389",
+      "status": "verified",
+      "latest_relevant": "2026-08-28T07:39:45+08:00《【饼之诗】罪人奥义主教，依靠超强苟活驰骋环境！【影之诗超凡世界】》（BV1GYtF6ZEHj）",
+      "deck_push_after_release": true,
+      "review_status": "reviewed",
+      "collection_method": "site_search_exact_uid",
+      "profile_url": "https://space.bilibili.com/82389"
+    },
+    {
+      "creator": "yokidou",
+      "uid": "546495",
+      "status": "verified",
+      "latest_relevant": "2026-08-27T10:34:07+08:00《【影之诗·超凡世界】「复苏的阿兹弗特」全卡点评！》（BV1hWhc6eEm9）",
+      "deck_push_after_release": false,
+      "review_status": "reviewed",
+      "collection_method": "site_search_exact_uid",
+      "profile_url": "https://space.bilibili.com/546495"
+    },
+    {
+      "creator": "美少女莉莉猪",
+      "uid": "473097569",
+      "status": "verified",
+      "latest_relevant": "观察窗口 2026-08-27T00:00:00+08:00 之后未发现待分类投稿",
+      "deck_push_after_release": false,
+      "review_status": "reviewed",
+      "collection_method": "site_search_exact_uid",
+      "profile_url": "https://space.bilibili.com/473097569"
+    },
+    {
+      "creator": "一只小吾影",
+      "uid": "169172902",
+      "status": "verified",
+      "latest_relevant": "2026-08-28T13:04:44+08:00《【直播回放】九转白银掌控雷电 2026年08月18日22点场》（BV1YQtc6eECG）",
+      "deck_push_after_release": false,
+      "review_status": "reviewed",
+      "collection_method": "account_archive_by_uid",
+      "profile_url": "https://space.bilibili.com/169172902"
+    },
+    {
+      "creator": "章鱼哥official",
+      "uid": "429920",
+      "status": "verified",
+      "latest_relevant": "2026-08-28T06:02:49+08:00《【第九弹开荒】实验法 章鱼哥全程GM达成！》（BV1Yy4o6XEdh）",
+      "deck_push_after_release": true,
+      "review_status": "reviewed",
+      "collection_method": "account_archive_by_uid",
+      "profile_url": "https://space.bilibili.com/429920"
+    },
+    {
+      "creator": "NightVine",
+      "uid": "307980",
+      "status": "verified",
+      "latest_relevant": "观察窗口 2026-08-27T00:00:00+08:00 之后未发现待分类投稿",
+      "deck_push_after_release": false,
+      "review_status": "reviewed",
+      "collection_method": "account_archive_by_uid",
+      "profile_url": "https://space.bilibili.com/307980"
+    },
+    {
+      "creator": "璐缇雅Official",
+      "uid": "1472898403",
+      "status": "verified",
+      "latest_relevant": "2026-08-27T11:00:00+08:00《【国际BO10】跨境争锋 跨服3V3团体对抗赛 国服3VS国际服2》（BV1pb8o6yEqu）",
+      "deck_push_after_release": false,
+      "review_status": "reviewed",
+      "collection_method": "site_search_exact_uid",
+      "profile_url": "https://space.bilibili.com/1472898403"
+    },
+    {
+      "creator": "天宇技师Zty",
+      "uid": "157278",
+      "status": "verified",
+      "latest_relevant": "观察窗口 2026-08-27T00:00:00+08:00 之后未发现待分类投稿",
+      "deck_push_after_release": false,
+      "review_status": "reviewed",
+      "collection_method": "site_search_exact_uid",
+      "profile_url": "https://space.bilibili.com/157278"
+    },
+    {
+      "creator": "暴风魚",
+      "uid": "22479410",
+      "status": "verified",
+      "latest_relevant": "观察窗口 2026-08-27T00:00:00+08:00 之后未发现待分类投稿",
+      "deck_push_after_release": false,
+      "review_status": "reviewed",
+      "collection_method": "account_archive_by_uid",
+      "profile_url": "https://space.bilibili.com/22479410"
+    }
   ],
   "bilibili_observations": [
     {
@@ -419,7 +686,9 @@
       "published_at": "2026-08-27T21:49:41+08:00",
       "observed_at": "2026-08-28T14:53:37+08:00",
       "content_type": "deck_video",
-      "archetype_ids": ["experiment_witch"],
+      "archetype_ids": [
+        "experiment_witch"
+      ],
       "independent_group": "红发的大魔女",
       "source_url": "https://www.bilibili.com/video/BV1yH4o6BEpb/",
       "source_id": "bilibili_topic_search",
@@ -436,7 +705,9 @@
       "published_at": "2026-08-27T15:47:45+08:00",
       "observed_at": "2026-08-28T14:53:37+08:00",
       "content_type": "deck_video",
-      "archetype_ids": ["experiment_witch"],
+      "archetype_ids": [
+        "experiment_witch"
+      ],
       "independent_group": "芯星子",
       "source_url": "https://www.bilibili.com/video/BV1hChw66EV2/",
       "source_id": "bilibili_topic_search",
@@ -453,7 +724,9 @@
       "published_at": "2026-08-28T10:24:43+08:00",
       "observed_at": "2026-08-28T14:53:37+08:00",
       "content_type": "deck_video",
-      "archetype_ids": ["artifact_nemesis"],
+      "archetype_ids": [
+        "artifact_nemesis"
+      ],
       "independent_group": "困倦keeexing",
       "source_url": "https://www.bilibili.com/video/BV11p4f61EeA/",
       "source_id": "bilibili_af_search",
@@ -470,7 +743,9 @@
       "published_at": "2026-08-27T23:01:00+08:00",
       "observed_at": "2026-08-28T14:53:37+08:00",
       "content_type": "deck_video",
-      "archetype_ids": ["artifact_nemesis"],
+      "archetype_ids": [
+        "artifact_nemesis"
+      ],
       "independent_group": "司舒哟",
       "source_url": "https://www.bilibili.com/video/BV1od4d6xEPe/",
       "source_id": "bilibili_af_search",
@@ -487,7 +762,9 @@
       "published_at": "2026-08-28T00:35:54+08:00",
       "observed_at": "2026-08-28T14:53:37+08:00",
       "content_type": "deck_video",
-      "archetype_ids": ["midrange_nightmare"],
+      "archetype_ids": [
+        "midrange_nightmare"
+      ],
       "independent_group": "诗月樱",
       "source_url": "https://www.bilibili.com/video/BV1Gs4d6mErp/",
       "source_id": "bilibili_mid_search",
@@ -504,7 +781,9 @@
       "published_at": "2026-08-27T17:54:57+08:00",
       "observed_at": "2026-08-28T14:53:37+08:00",
       "content_type": "deck_video",
-      "archetype_ids": ["midrange_nightmare"],
+      "archetype_ids": [
+        "midrange_nightmare"
+      ],
       "independent_group": "银月与四叶草",
       "source_url": "https://www.bilibili.com/video/BV15q4R6DEyq/",
       "source_id": "bilibili_mid_search",
@@ -521,7 +800,9 @@
       "published_at": "2026-08-28T10:30:00+08:00",
       "observed_at": "2026-08-28T14:53:37+08:00",
       "content_type": "deck_video",
-      "archetype_ids": ["midrange_nightmare"],
+      "archetype_ids": [
+        "midrange_nightmare"
+      ],
       "independent_group": "空白喵のDOTA2",
       "source_url": "https://www.bilibili.com/video/BV1GW4d6EENR/",
       "source_id": "bilibili_exp_search",
@@ -538,7 +819,9 @@
       "published_at": "2026-08-27T20:58:42+08:00",
       "observed_at": "2026-08-28T14:53:37+08:00",
       "content_type": "deck_video",
-      "archetype_ids": ["experiment_witch"],
+      "archetype_ids": [
+        "experiment_witch"
+      ],
       "independent_group": "困倦keeexing",
       "source_url": "https://www.bilibili.com/video/BV13W4966EVB/",
       "source_id": "bilibili_exp_search",
@@ -555,7 +838,9 @@
       "published_at": "2026-08-28T11:49:48+08:00",
       "observed_at": "2026-08-28T14:53:37+08:00",
       "content_type": "deck_video",
-      "archetype_ids": ["experiment_witch"],
+      "archetype_ids": [
+        "experiment_witch"
+      ],
       "independent_group": "蕾米莉亚__Scarlet",
       "source_url": "https://www.bilibili.com/video/BV1Ngtw6pENF/",
       "source_id": "bilibili_exp_search",
@@ -572,7 +857,9 @@
       "published_at": "2026-08-27T21:21:28+08:00",
       "observed_at": "2026-08-28T14:53:37+08:00",
       "content_type": "deck_video",
-      "archetype_ids": ["experiment_witch"],
+      "archetype_ids": [
+        "experiment_witch"
+      ],
       "independent_group": "Roy罗伊",
       "source_url": "https://www.bilibili.com/video/BV1p6496fEwJ/",
       "source_id": "bilibili_exp_search",
@@ -582,6 +869,25 @@
       "note": "计作实验体法国服扩散；播放量和标题不作为胜率证据。"
     },
     {
+      "id": "bili-exp-octopus-gm-run",
+      "creator": "章鱼哥official",
+      "title": "【第九弹开荒】实验法 章鱼哥全程GM达成！",
+      "published_label": "2026-08-28 06:02",
+      "published_at": "2026-08-28T06:02:49+08:00",
+      "observed_at": "2026-08-28T16:02:58+08:00",
+      "content_type": "deck_video",
+      "archetype_ids": [
+        "experiment_witch"
+      ],
+      "independent_group": "章鱼哥official",
+      "source_url": "https://www.bilibili.com/video/BV1Yy4o6XEdh/",
+      "source_id": "bilibili_octopus_experiment_run",
+      "distribution_role": "GM全程录像",
+      "view_count_observed": 1733,
+      "named_seed": true,
+      "note": "标题、作者UID与7个分P已核验。计作实验法在国服的账号级扩散；空简介且未核验固定40张，不把GM措辞升级为胜率或独立强度证据。"
+    },
+    {
       "id": "bili-sinner-bishop-star",
       "creator": "星野饼美",
       "title": "【饼之诗】罪人奥义主教，依靠超强苟活驰骋环境！【影之诗超凡世界】",
@@ -589,7 +895,9 @@
       "published_at": "2026-08-28T07:39:45+08:00",
       "observed_at": "2026-08-28T15:24:23+08:00",
       "content_type": "deck_video",
-      "archetype_ids": ["sinner_bishop"],
+      "archetype_ids": [
+        "sinner_bishop"
+      ],
       "independent_group": "星野饼美",
       "source_url": "https://www.bilibili.com/video/BV1GYtF6ZEHj/",
       "source_id": "bilibili_sinner_bishop_video",
@@ -735,6 +1043,140 @@
       "directness": "search_excerpt",
       "summary": "协作皇家作者称瑟菲法较难；这与财宝皇家不是同一体系，不能视为冲突或合并。",
       "sample_games": null
+    }
+  ],
+  "bilibili_account_candidates": [
+    {
+      "bvid": "BV1YQtc6eECG",
+      "title": "【直播回放】九转白银掌控雷电 2026年08月18日22点场",
+      "published_at": "2026-08-28T13:04:44+08:00",
+      "views": 141,
+      "owner_uid": "169172902",
+      "url": "https://www.bilibili.com/video/BV1YQtc6eECG/",
+      "uid": "169172902",
+      "review_status": "reviewed",
+      "classification": "reviewed_non_deck_content"
+    },
+    {
+      "bvid": "BV1eDtc6NEMy",
+      "title": "【直播回放】连麦看snc 2026年08月16日18点场",
+      "published_at": "2026-08-28T12:54:00+08:00",
+      "views": 76,
+      "owner_uid": "169172902",
+      "url": "https://www.bilibili.com/video/BV1eDtc6NEMy/",
+      "uid": "169172902",
+      "review_status": "reviewed",
+      "classification": "reviewed_non_deck_content"
+    },
+    {
+      "bvid": "BV1YQtc6vEdr",
+      "title": "【直播回放】和roy老师解说狼宴杯8进4 2026年08月22日19点场",
+      "published_at": "2026-08-28T12:52:03+08:00",
+      "views": 52,
+      "owner_uid": "169172902",
+      "url": "https://www.bilibili.com/video/BV1YQtc6vEdr/",
+      "uid": "169172902",
+      "review_status": "reviewed",
+      "classification": "reviewed_non_deck_content"
+    },
+    {
+      "bvid": "BV1GYtF6ZEHj",
+      "title": "【饼之诗】罪人奥义主教，依靠超强苟活驰骋环境！【影之诗超凡世界】",
+      "published_at": "2026-08-28T07:39:45+08:00",
+      "views": 31200,
+      "owner_uid": "82389",
+      "url": "https://www.bilibili.com/video/BV1GYtF6ZEHj/",
+      "uid": "82389",
+      "review_status": "reviewed",
+      "classification": "known_deck_observation"
+    },
+    {
+      "bvid": "BV1Yy4o6XEdh",
+      "title": "【第九弹开荒】实验法 章鱼哥全程GM达成！",
+      "published_at": "2026-08-28T06:02:49+08:00",
+      "views": 1737,
+      "owner_uid": "429920",
+      "url": "https://www.bilibili.com/video/BV1Yy4o6XEdh/",
+      "uid": "429920",
+      "review_status": "reviewed",
+      "classification": "known_deck_observation"
+    },
+    {
+      "bvid": "BV1bthA6zEej",
+      "title": "【影之诗职业联赛】 VARREL VS ZETA（第八弹环境结束）",
+      "published_at": "2026-08-27T13:53:00+08:00",
+      "views": 1160,
+      "owner_uid": "429920",
+      "url": "https://www.bilibili.com/video/BV1bthA6zEej/",
+      "uid": "429920",
+      "review_status": "reviewed",
+      "classification": "reviewed_non_deck_content"
+    },
+    {
+      "bvid": "BV1aHhA6CE1H",
+      "title": "【影之诗职业联赛】 LVH VS DFM",
+      "published_at": "2026-08-27T13:10:43+08:00",
+      "views": 1069,
+      "owner_uid": "429920",
+      "url": "https://www.bilibili.com/video/BV1aHhA6CE1H/",
+      "uid": "429920",
+      "review_status": "reviewed",
+      "classification": "reviewed_non_deck_content"
+    },
+    {
+      "bvid": "BV1pb8o6yEqu",
+      "title": "【国际BO10】跨境争锋 跨服3V3团体对抗赛 国服3VS国际服2",
+      "published_at": "2026-08-27T11:00:00+08:00",
+      "views": 1839,
+      "owner_uid": "1472898403",
+      "url": "https://www.bilibili.com/video/BV1pb8o6yEqu/",
+      "uid": "429920",
+      "review_status": "reviewed",
+      "classification": "obvious_non_deck_content"
+    },
+    {
+      "bvid": "BV1pb8o6yEqu",
+      "title": "【国际BO10】跨境争锋 跨服3V3团体对抗赛 国服3VS国际服2",
+      "published_at": "2026-08-27T11:00:00+08:00",
+      "views": 1839,
+      "owner_uid": "1472898403",
+      "url": "https://www.bilibili.com/video/BV1pb8o6yEqu/",
+      "uid": "1472898403",
+      "review_status": "reviewed",
+      "classification": "reviewed_non_deck_content"
+    },
+    {
+      "bvid": "BV1hWhc6eEm9",
+      "title": "【影之诗·超凡世界】「复苏的阿兹弗特」全卡点评！",
+      "published_at": "2026-08-27T10:34:07+08:00",
+      "views": 17888,
+      "owner_uid": "546495",
+      "url": "https://www.bilibili.com/video/BV1hWhc6eEm9/",
+      "uid": "546495",
+      "review_status": "reviewed",
+      "classification": "reviewed_non_deck_content"
+    },
+    {
+      "bvid": "BV1Xnhc6iEqj",
+      "title": "【影之诗·超凡世界】Rage职业联赛26~27赛季第5节下半录像！",
+      "published_at": "2026-08-27T10:21:53+08:00",
+      "views": 2560,
+      "owner_uid": "546495",
+      "url": "https://www.bilibili.com/video/BV1Xnhc6iEqj/",
+      "uid": "546495",
+      "review_status": "reviewed",
+      "classification": "reviewed_non_deck_content"
+    },
+    {
+      "bvid": "BV1F68o6MEMS",
+      "title": "与水哥点评9弹全卡！【影之诗超凡世界】",
+      "published_at": "2026-08-27T03:05:17+08:00",
+      "views": 32987,
+      "owner_uid": "82389",
+      "url": "https://www.bilibili.com/video/BV1F68o6MEMS/",
+      "uid": "82389",
+      "review_status": "reviewed",
+      "classification": "reviewed_non_deck_content"
     }
   ]
 }
