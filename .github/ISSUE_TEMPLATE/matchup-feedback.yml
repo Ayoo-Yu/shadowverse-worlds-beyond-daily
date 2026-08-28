@@ -1,0 +1,71 @@
+name: 玩家对局反馈
+description: 提供可按对局拆分的真实日志，帮助校准卡组克制关系。
+title: "[对局反馈] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请按一场或一组同版本对局填写。连胜截图可作辅助，但不能替代分对局记录。
+  - type: input
+    id: date
+    attributes:
+      label: 对局日期
+      placeholder: 2026-08-28
+    validations:
+      required: true
+  - type: input
+    id: own_deck
+    attributes:
+      label: 你的卡组与版本指纹
+      description: 优先填写情报页中的版本名或指纹摘要；自组卡请附官方卡组链接。
+      placeholder: AF｜Utatomo 17连胜版｜eLN-x3_...
+    validations:
+      required: true
+  - type: input
+    id: opponent_deck
+    attributes:
+      label: 对手体系
+      placeholder: 实验体／瑟菲法
+    validations:
+      required: true
+  - type: dropdown
+    id: turn_order
+    attributes:
+      label: 先后手
+      options:
+        - 先手
+        - 后手
+        - 多局混合（请在备注中拆分）
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: 结果
+      options:
+        - 胜
+        - 负
+        - 多局样本（请在备注中写明胜负数）
+    validations:
+      required: true
+  - type: textarea
+    id: key_turns
+    attributes:
+      label: 关键回合与胜负原因
+      description: 说明真正决定对局的资源、场面或斩杀窗口。
+    validations:
+      required: true
+  - type: textarea
+    id: caveats
+    attributes:
+      label: 样本边界
+      description: 请写明段位、局数、是否换过构筑，以及是否存在明显操作失误。
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: 公开使用
+      options:
+        - label: 我同意将这份匿名对局数据用于公开汇总；内容中不含个人隐私或账号凭据。
+          required: true

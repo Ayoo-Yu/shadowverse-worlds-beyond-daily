@@ -1,0 +1,361 @@
+{
+  "schema_version": 2,
+  "report_date": "2026-08-28",
+  "generated_at": "2026-08-28T13:30:00+08:00",
+  "game": "影之诗：超凡世界",
+  "environment": "第9弹卡包「复苏的阿兹弗特」上线第2天",
+  "public_url": "https://ayoo-yu.github.io/shadowverse-worlds-beyond-daily/",
+  "feedback_url": "https://github.com/Ayoo-Yu/shadowverse-worlds-beyond-daily/issues/new?template=matchup-feedback.yml",
+  "decision_policy": {
+    "play_now": "具体40张构筑可复制，至少2个独立玩家给出强度信号，目标卡组已出现至少2个独立扩散信号，并且同一构筑范围内至少2个独立对局方向证据；若只有玩家自述而无成规模战绩，最高只能给B级。",
+    "test_first": "具体构筑和强度成立，但扩散、克制或构筑范围仍有一环未闭合。",
+    "watch_or_avoid": "卡组强度可见，但已被内容端放大、已有多条被针对证据，或无法把克制说法映射到当前具体40张。",
+    "prohibition": "连胜帖数量不是胜率；同一转载链不算独立证据；同职业不同体系不得互相借用克制结论。"
+  },
+  "coverage": {
+    "x": {
+      "status": "reviewed_public_index",
+      "window": "2026-08-27 至 2026-08-28",
+      "note": "用 Shadowverse Wins、ShadoLabo 与 Yahoo!实时检索复核公开帖；未接入 X 官方全量流。"
+    },
+    "bilibili": {
+      "status": "partial",
+      "window": "截至 2026-08-28 13:30 +08:00",
+      "named_accounts": 9,
+      "checked_accounts": 6,
+      "unverified_accounts": 3,
+      "note": "公开搜索页可见主题扩散，但任意账号接口间歇返回风控错误；未把缺失账号解释为没有更新。"
+    },
+    "matchups": {
+      "status": "self_report_only",
+      "note": "当前只有独立玩家自述与小样本战绩，没有可复核的全量对局矩阵，因此不输出胜率百分比。"
+    }
+  },
+  "sources": [
+    {
+      "id": "shadolabo_counts",
+      "label": "ShadoLabo 第9弹连胜帖聚类",
+      "url": "https://svlabo.jp/blog-entry-1894.html",
+      "observed_at": "2026-08-28T12:20:00+08:00",
+      "definition": "计数单位是公开连胜构筑帖，不是对局数、使用率或胜率。"
+    },
+    {
+      "id": "shadowverse_wins",
+      "label": "Shadowverse Wins 单条构筑页",
+      "url": "https://shadowverse-wins.com/",
+      "observed_at": "2026-08-28T12:40:00+08:00",
+      "definition": "用于回到原始构筑截图、发帖账号与连胜描述。"
+    },
+    {
+      "id": "yahoo_realtime_nightmare",
+      "label": "Yahoo!实时检索：Nightmare 连胜",
+      "url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&md=h&p=%E3%83%8A%E3%82%A4%E3%83%88%E3%83%A1%E3%82%A2+%E9%80%A3%E5%8B%9D&rkf=1",
+      "observed_at": "2026-08-28T12:50:00+08:00",
+      "definition": "只作公开 X 帖检索入口；摘要不是额外独立证据。"
+    },
+    {
+      "id": "yahoo_realtime_witch",
+      "label": "Yahoo!实时检索：Witch 连胜",
+      "url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&nobtl=1&p=%E3%82%A6%E3%82%A3%E3%83%83%E3%83%81+%E9%80%A3%E5%8B%9D&rkf=1",
+      "observed_at": "2026-08-28T12:55:00+08:00",
+      "definition": "只作公开 X 帖检索入口；摘要不是额外独立证据。"
+    },
+    {
+      "id": "bilibili_topic_search",
+      "label": "B站：超凡世界主题检索",
+      "url": "https://search.bilibili.com/all?keyword=%E8%B6%85%E5%87%A1%E4%B8%96%E7%95%8C",
+      "observed_at": "2026-08-28T13:15:00+08:00",
+      "definition": "用于观察视频标题、作者与发布时间形成的内容扩散，不把播放量解释为卡组强度。"
+    }
+  ],
+  "meta_presence": [
+    {"archetype_id": "midrange_nightmare", "archetype": "中速梦魇", "winning_posts": 9, "rank": 1, "source_id": "shadolabo_counts"},
+    {"archetype_id": "pirate_royal", "archetype": "海盗皇家", "winning_posts": 7, "rank": 2, "source_id": "shadolabo_counts"},
+    {"archetype_id": "artifact_nemesis", "archetype": "造物超越者（AF）", "winning_posts": 6, "rank": 3, "source_id": "shadolabo_counts"},
+    {"archetype_id": "aggro_nightmare", "archetype": "快攻梦魇", "winning_posts": 3, "rank": 4, "source_id": "shadolabo_counts"},
+    {"archetype_id": "experiment_witch", "archetype": "实验体／瑟菲法", "winning_posts": 2, "rank": 5, "source_id": "shadolabo_counts"}
+  ],
+  "decks": [
+    {
+      "id": "af-utatomo-17",
+      "archetype_id": "artifact_nemesis",
+      "archetype": "造物超越者（AF）",
+      "class": "超越者",
+      "variant": "Utatomo 17连胜版",
+      "variant_scope": "artifact",
+      "fingerprint": "eLN-x3_f5jkx3_dyRQx1_eLaex3_ej_8x1",
+      "deck_url": "https://shadowverse-wb.com/ja/deck/detail/?hash=1.7.eLN-.eLN-.eLN-.f5jk.f5jk.f5jk.dyRQ.eLae.eLae.eLae.ej_8.f5wE.fUq8.fUq8.fUq8.f69s.f69s.f69s.fUKu.f5gc.f5gc.f6Pe.f6Pe.f6Pe.fUp-.fUp-.fUp-.ejG6.ejG6.ej--.ej--.ftEe.ftEe.ftEe.ejlM.ejlM.ejlM.f6PU.f6PU.f6PU",
+      "source_url": "https://shadowverse-wins.com/single.php?manageId=107694",
+      "source_account": "Utatomo",
+      "published_at": "2026-08-27T00:00:00+09:00",
+      "performance": "17连胜",
+      "copy_ready": true,
+      "notes": "官方40张链接由原构筑图二维码解码；与后续GM版相差1张。"
+    },
+    {
+      "id": "af-utatomo-gm",
+      "archetype_id": "artifact_nemesis",
+      "archetype": "造物超越者（AF）",
+      "class": "超越者",
+      "variant": "Utatomo 早期GM版",
+      "variant_scope": "artifact",
+      "fingerprint": "eLN-x3_f5jkx3_dyRQx1_eLaex3_ej_8x2",
+      "deck_url": "https://shadowverse-wb.com/ja/deck/detail/?hash=1.7.eLN-.eLN-.eLN-.f5jk.f5jk.f5jk.dyRQ.eLae.eLae.eLae.ej_8.ej_8.f5wE.fUq8.fUq8.fUq8.f69s.f69s.f69s.f5gc.f5gc.f6Pe.f6Pe.f6Pe.fUp-.fUp-.fUp-.ejG6.ejG6.ej--.ej--.ftEe.ftEe.ftEe.ejlM.ejlM.ejlM.f6PU.f6PU.f6PU",
+      "source_url": "https://shadowverse-wins.com/single.php?manageId=107815",
+      "source_account": "Utatomo",
+      "published_at": "2026-08-28T00:00:00+09:00",
+      "performance": "13连胜后早期GM",
+      "copy_ready": true,
+      "notes": "同一作者的后续修订，不计为第二个独立强度来源。"
+    },
+    {
+      "id": "midnight-keniwo-10",
+      "archetype_id": "midrange_nightmare",
+      "archetype": "中速梦魇",
+      "class": "梦魇",
+      "variant": "Keniwo 10连胜版",
+      "variant_scope": "midrange",
+      "fingerprint": "cM8Ex2_fPCmx3_f0oGx3_fndGx3",
+      "deck_url": "https://shadowverse-wb.com/ja/deck/detail/?hash=1.5.cM8E.cM8E.fPCm.fPCm.fPCm.f0oG.f0oG.f0oG.fndG.fndG.fndG.dtoY.dtoY.dtoY.eeNm.eeNm.eeNm.f1KU.f1KU.f1KU.fPhs.fPhs.f11k.f11k.f11k.f1W-.f1W-.f1W-.foL-.foL-.foL-.fPxU.fPxU.fPxU.foM8.foM8.foM8.f1X8.f1X8.f1X8",
+      "source_url": "https://shadowverse-wins.com/single.php?manageId=107813",
+      "source_account": "Keniwo",
+      "published_at": "2026-08-28T00:00:00+09:00",
+      "performance": "10连胜",
+      "copy_ready": true,
+      "notes": "当前公开连胜帖聚类第一，信息差风险高于AF。"
+    },
+    {
+      "id": "experiment-m1kumomo-10",
+      "archetype_id": "experiment_witch",
+      "archetype": "实验体／瑟菲法",
+      "class": "巫师",
+      "variant": "M1kumomo 10连胜版",
+      "variant_scope": "experiment_sefie",
+      "fingerprint": "e4Ggx1_cH3Ex3_cfTux3_finkx3",
+      "deck_url": "https://shadowverse-wb.com/ja/deck/detail/?hash=1.3.e4Gg.cH3E.cH3E.cH3E.cfTu.cfTu.cfTu.fink.fink.fink.fDXk.fDXk.fDXk.fikc.fikc.fikc.fKpM.fKpM.fKpM.fKsU.fKsU.fKsU.fj1M.fj1M.fj1M.fi-E.fi-E.fi-E.fjDs.fjDs.fjDs.fjG-.fjG-.fjG-.fL2-.fL2-.fL2-.fjTU.fjTU.fjTU",
+      "source_url": "https://shadowverse-wins.com/single.php?manageId=107775",
+      "source_account": "M1kumomo",
+      "published_at": "2026-08-28T00:00:00+09:00",
+      "performance": "10连胜",
+      "copy_ready": true,
+      "notes": "B站主题视频正在扩散；存在AF与中速梦魇的反向克制自述。"
+    },
+    {
+      "id": "pirate-amano-12",
+      "archetype_id": "pirate_royal",
+      "archetype": "海盗皇家",
+      "class": "皇家",
+      "variant": "Amano 12连胜版",
+      "variant_scope": "pirate",
+      "fingerprint": "cEZsx3_eXbEx3_evm6x3_eXnux2",
+      "deck_url": "https://shadowverse-wb.com/ja/deck/detail/?hash=1.2.cEZs.cEZs.cEZs.eXbE.eXbE.eXbE.evm6.evm6.evm6.eXnu.eXnu.fgIM.fgIM.fgIM.fIQE.fIQE.fIQE.fgX-.fgX-.fgX-.e9Ak.e9Ak.e9Ak.fgb6.fgb6.fgb6.dmyk.dmyk.dmyk.fgqk.fgqk.fgqk.fgnc.fgnc.fgnc.e8u8.e8u8.fh1E.fh1E.fh1E",
+      "source_url": "https://shadowverse-wins.com/single.php?manageId=107672",
+      "source_account": "Amano",
+      "published_at": "2026-08-27T00:00:00+09:00",
+      "performance": "12连胜",
+      "copy_ready": true,
+      "notes": "现有对实验体法有利的公开说法主要指财宝皇家，不得直接外推到本海盗版本。"
+    },
+    {
+      "id": "aggro-night-owa-16",
+      "archetype_id": "aggro_nightmare",
+      "archetype": "快攻梦魇",
+      "class": "梦魇",
+      "variant": "owaowano_mi 16连胜版",
+      "variant_scope": "aggro",
+      "fingerprint": "e3lsx3_cM8Ex3_fPCmx3_dhqmx3",
+      "deck_url": "https://shadowverse-wb.com/ja/deck/detail/?hash=1.5.e3ls.e3ls.e3ls.cM8E.cM8E.cM8E.fPCm.fPCm.fPCm.dhqm.dhqm.dhqm.f0oG.f0oG.f0oG.fnd6.fnd6.fnd6.fndG.fndG.fndG.eGFs.eGFs.eGFs.dtoY.dtoY.eGCk.eGCk.f1KU.f1KU.f1KU.f11k.f11k.f11k.f1W-.f1W-.f1W-.foM8.foM8.foM8",
+      "source_url": "https://shadowverse-wins.com/single.php?manageId=107816",
+      "source_account": "owaowano_mi",
+      "published_at": "2026-08-28T00:00:00+09:00",
+      "performance": "16连胜",
+      "copy_ready": true,
+      "notes": "单个高连胜样本；尚未形成可用于反制判断的独立对局证据。"
+    }
+  ],
+  "strength_evidence": [
+    {"id": "str-af-utatomo", "archetype_id": "artifact_nemesis", "variant_scope": "artifact", "independent_group": "Utatomo", "source_url": "https://shadowverse-wins.com/single.php?manageId=107694", "result": "17连胜", "quality": "direct_deck_page"},
+    {"id": "str-af-gel", "archetype_id": "artifact_nemesis", "variant_scope": "artifact", "independent_group": "Stonebridge gel", "source_url": "https://shadowverse-wins.com/single.php?manageId=107800", "result": "17连胜", "quality": "direct_deck_page"},
+    {"id": "str-af-kamuku", "archetype_id": "artifact_nemesis", "variant_scope": "artifact", "independent_group": "KAMUKU60", "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&nobtl=1&p=%E3%82%A6%E3%82%A3%E3%83%83%E3%83%81+%E9%80%A3%E5%8B%9D&rkf=1", "result": "10连胜", "quality": "search_excerpt"},
+    {"id": "str-mid-keniwo", "archetype_id": "midrange_nightmare", "variant_scope": "midrange", "independent_group": "Keniwo", "source_url": "https://shadowverse-wins.com/single.php?manageId=107813", "result": "10连胜", "quality": "direct_deck_page"},
+    {"id": "str-mid-kanata", "archetype_id": "midrange_nightmare", "variant_scope": "midrange", "independent_group": "Kanata_poe0518", "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&md=h&p=%E3%83%8A%E3%82%A4%E3%83%88%E3%83%A1%E3%82%A2+%E9%80%A3%E5%8B%9D&rkf=1", "result": "30局23胜7负", "quality": "search_excerpt_with_sample"},
+    {"id": "str-exp-m1", "archetype_id": "experiment_witch", "variant_scope": "experiment_sefie", "independent_group": "M1kumomo", "source_url": "https://shadowverse-wins.com/single.php?manageId=107775", "result": "10连胜", "quality": "direct_deck_page"},
+    {"id": "str-exp-syu", "archetype_id": "experiment_witch", "variant_scope": "experiment_sefie", "independent_group": "Syu", "source_url": "https://shadowverse-wins.com/single.php?manageId=107801", "result": "17连胜", "quality": "direct_deck_page"},
+    {"id": "str-exp-figole", "archetype_id": "experiment_witch", "variant_scope": "experiment_hybrid", "independent_group": "Figole1436", "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&nobtl=1&p=%E3%82%A6%E3%82%A3%E3%83%83%E3%83%81+%E9%80%A3%E5%8B%9D&rkf=1", "result": "16连胜", "quality": "search_excerpt"},
+    {"id": "str-exp-cags", "archetype_id": "experiment_witch", "variant_scope": "experiment_sefie", "independent_group": "Cags", "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&nobtl=1&p=%E3%82%A6%E3%82%A3%E3%83%83%E3%83%83%E3%83%81+%E9%80%A3%E5%8B%9D&rkf=1", "result": "17连胜", "quality": "search_excerpt"},
+    {"id": "str-pirate-amano", "archetype_id": "pirate_royal", "variant_scope": "pirate", "independent_group": "Amano", "source_url": "https://shadowverse-wins.com/single.php?manageId=107672", "result": "12连胜", "quality": "direct_deck_page"},
+    {"id": "str-treasure-uocha", "archetype_id": "treasure_royal", "variant_scope": "treasure", "independent_group": "u0u0_cha", "source_url": "https://shadowverse-wins.com/single.php?manageId=107695", "result": "7连胜", "quality": "direct_deck_page"},
+    {"id": "str-aggro-owa", "archetype_id": "aggro_nightmare", "variant_scope": "aggro", "independent_group": "owaowano_mi", "source_url": "https://shadowverse-wins.com/single.php?manageId=107816", "result": "16连胜", "quality": "direct_deck_page"}
+  ],
+  "bilibili_accounts": [
+    {"creator": "星野饼美", "uid": "82389", "status": "checked", "latest_relevant": "平衡调整与第9弹全卡点评", "deck_push_after_release": false, "profile_url": "https://space.bilibili.com/82389"},
+    {"creator": "yokidou", "uid": "546495", "status": "checked", "latest_relevant": "第9弹全卡点评", "deck_push_after_release": false, "profile_url": "https://space.bilibili.com/546495"},
+    {"creator": "美少女莉莉猪", "uid": "473097569", "status": "unverified", "latest_relevant": "账号级最新稿件未稳定读取", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/473097569"},
+    {"creator": "一只小吾影", "uid": "169172902", "status": "checked", "latest_relevant": "当前可见直播，未确认新包具体卡组视频", "deck_push_after_release": false, "profile_url": "https://space.bilibili.com/169172902"},
+    {"creator": "章鱼哥official", "uid": "429920", "status": "checked", "latest_relevant": "第九弹环境开荒直播", "deck_push_after_release": false, "profile_url": "https://space.bilibili.com/429920"},
+    {"creator": "NightVine", "uid": "307980", "status": "checked", "latest_relevant": "上线前试玩预组宇宙鱼；未确认上线后具体卡组视频", "deck_push_after_release": false, "profile_url": "https://space.bilibili.com/307980"},
+    {"creator": "璐缇雅Official", "uid": "1472898403", "status": "unverified", "latest_relevant": "账号级最新稿件未稳定读取", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/1472898403"},
+    {"creator": "天宇技师Zty", "uid": "157278", "status": "unverified", "latest_relevant": "账号级最新稿件未稳定读取", "deck_push_after_release": null, "profile_url": "https://space.bilibili.com/157278"},
+    {"creator": "暴风魚", "uid": "22479410", "status": "checked", "latest_relevant": "未确认上线后的具体卡组推荐", "deck_push_after_release": false, "profile_url": "https://space.bilibili.com/22479410"}
+  ],
+  "bilibili_observations": [
+    {
+      "id": "bili-exp-redwitch",
+      "creator": "红发的大魔女",
+      "title": "持续场面优势，最高一回合斩杀14伤的实验体法",
+      "published_label": "约15分钟前",
+      "observed_at": "2026-08-28T13:15:00+08:00",
+      "content_type": "deck_video",
+      "archetype_ids": ["experiment_witch"],
+      "independent_group": "红发的大魔女",
+      "source_url": "https://search.bilibili.com/all?keyword=%E8%B6%85%E5%87%A1%E4%B8%96%E7%95%8C",
+      "named_seed": false,
+      "note": "搜索页可见，独立视频URL尚未稳定提取。"
+    },
+    {
+      "id": "bili-exp-xinxingzi",
+      "creator": "芯星子",
+      "title": "【超强T1】0010天盾瑟菲法",
+      "published_label": "约6小时前",
+      "observed_at": "2026-08-28T13:15:00+08:00",
+      "content_type": "deck_video",
+      "archetype_ids": ["experiment_witch"],
+      "independent_group": "芯星子",
+      "source_url": "https://search.bilibili.com/all?keyword=%E8%B6%85%E5%87%A1%E4%B8%96%E7%95%8C",
+      "named_seed": false,
+      "note": "标题形成早期扩散信号；不以T1措辞作为强度证据。"
+    },
+    {
+      "id": "bili-star-balance",
+      "creator": "星野饼美",
+      "title": "27日平衡调整，手法巨大削弱！",
+      "published_label": "昨天",
+      "observed_at": "2026-08-28T13:15:00+08:00",
+      "content_type": "balance_commentary",
+      "archetype_ids": [],
+      "independent_group": "星野饼美",
+      "source_url": "https://space.bilibili.com/82389",
+      "named_seed": true,
+      "note": "不是上线后的具体40张卡组推荐，不计入任何体系扩散。"
+    },
+    {
+      "id": "bili-yokidou-review",
+      "creator": "yokidou",
+      "title": "【影之诗·超凡世界】「复苏的阿兹弗特」全卡点评！",
+      "published_label": "约11小时前",
+      "observed_at": "2026-08-28T13:15:00+08:00",
+      "content_type": "pack_review",
+      "archetype_ids": [],
+      "independent_group": "yokidou",
+      "source_url": "https://space.bilibili.com/546495",
+      "named_seed": true,
+      "note": "全卡点评不等同于卡组推荐。"
+    },
+    {
+      "id": "bili-octopus-live",
+      "creator": "章鱼哥official",
+      "title": "第九弹环境开荒",
+      "published_label": "直播中",
+      "observed_at": "2026-08-28T13:15:00+08:00",
+      "content_type": "live_exploration",
+      "archetype_ids": [],
+      "independent_group": "章鱼哥official",
+      "source_url": "https://space.bilibili.com/429920",
+      "named_seed": true,
+      "note": "未识别到固定40张列表前，只记录为环境探索。"
+    }
+  ],
+  "matchup_evidence": [
+    {
+      "id": "mu-af-exp-gel",
+      "favored_id": "artifact_nemesis",
+      "favored_scope": "artifact",
+      "unfavored_id": "experiment_witch",
+      "unfavored_scope": "sefie",
+      "independent_group": "Stonebridge gel",
+      "source_url": "https://shadowverse-wins.com/single.php?manageId=107800",
+      "evidence_type": "player_self_report",
+      "directness": "direct_deck_page",
+      "summary": "17连胜AF作者明确表示对瑟菲法有利。",
+      "sample_games": null
+    },
+    {
+      "id": "mu-af-exp-kamuku",
+      "favored_id": "artifact_nemesis",
+      "favored_scope": "artifact",
+      "unfavored_id": "experiment_witch",
+      "unfavored_scope": "witch",
+      "independent_group": "KAMUKU60",
+      "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&nobtl=1&p=%E3%82%A6%E3%82%A3%E3%83%83%E3%83%81+%E9%80%A3%E5%8B%9D&rkf=1",
+      "evidence_type": "player_self_report",
+      "directness": "search_excerpt",
+      "summary": "10连胜AF作者表示对巫师未尝败绩，推测对局有利。",
+      "sample_games": null
+    },
+    {
+      "id": "mu-mid-exp-cags",
+      "favored_id": "midrange_nightmare",
+      "favored_scope": "midrange",
+      "unfavored_id": "experiment_witch",
+      "unfavored_scope": "experiment",
+      "independent_group": "Cags",
+      "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&md=h&p=%E3%83%8A%E3%82%A4%E3%83%88%E3%83%A1%E3%82%A2+%E9%80%A3%E5%8B%9D&rkf=1",
+      "evidence_type": "player_self_report",
+      "directness": "search_excerpt",
+      "summary": "实验体法作者称梦魇较难应对；另有中速梦魇帖指向同一方向。",
+      "sample_games": null
+    },
+    {
+      "id": "mu-mid-exp-kanata",
+      "favored_id": "midrange_nightmare",
+      "favored_scope": "midrange",
+      "unfavored_id": "experiment_witch",
+      "unfavored_scope": "witch",
+      "independent_group": "Kanata_poe0518",
+      "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&md=h&p=%E3%83%8A%E3%82%A4%E3%83%88%E3%83%A1%E3%82%A2+%E9%80%A3%E5%8B%9D&rkf=1",
+      "evidence_type": "player_sample_and_self_report",
+      "directness": "search_excerpt",
+      "summary": "30局23胜7负的中速梦魇样本称对巫师环境有针对性；未公开分对局样本。",
+      "sample_games": 30
+    },
+    {
+      "id": "mu-treasure-exp-uocha",
+      "favored_id": "treasure_royal",
+      "favored_scope": "treasure",
+      "unfavored_id": "experiment_witch",
+      "unfavored_scope": "experiment",
+      "independent_group": "u0u0_cha",
+      "source_url": "https://shadowverse-wins.com/single.php?manageId=107695",
+      "evidence_type": "player_self_report",
+      "directness": "direct_deck_page",
+      "summary": "财宝皇家作者称青蛙场面对实验体随从有效。",
+      "sample_games": null
+    },
+    {
+      "id": "mu-treasure-exp-melow",
+      "favored_id": "treasure_royal",
+      "favored_scope": "treasure",
+      "unfavored_id": "experiment_witch",
+      "unfavored_scope": "witch",
+      "independent_group": "Melow7x",
+      "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&nobtl=1&p=%E3%82%A6%E3%82%A3%E3%83%83%E3%83%81+%E9%80%A3%E5%8B%9D&rkf=1",
+      "evidence_type": "player_self_report",
+      "directness": "search_excerpt",
+      "summary": "另一位玩家也称财宝皇家对巫师很强。",
+      "sample_games": null
+    },
+    {
+      "id": "mu-rally-exp-conflict",
+      "favored_id": "experiment_witch",
+      "favored_scope": "sefie",
+      "unfavored_id": "rally_royal",
+      "unfavored_scope": "rally",
+      "independent_group": "rally_royal_report",
+      "source_url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&nobtl=1&p=%E3%82%A6%E3%82%A3%E3%83%83%E3%83%81+%E9%80%A3%E5%8B%9D&rkf=1",
+      "evidence_type": "player_self_report",
+      "directness": "search_excerpt",
+      "summary": "协作皇家作者称瑟菲法较难；这与财宝皇家不是同一体系，不能视为冲突或合并。",
+      "sample_games": null
+    }
+  ]
+}
