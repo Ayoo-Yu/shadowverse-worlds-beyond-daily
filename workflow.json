@@ -113,7 +113,7 @@
       "label": "B站全站：当日全部追踪体系",
       "platform": "bilibili",
       "kind": "archetype_search_set",
-      "query_rule": "对 meta_presence 和候选推荐中的每个体系，用中文名及常用别名分别检索并按发布时间排序。",
+      "query_rule": "先做一次主题宽搜，再对 meta_presence 与候选推荐中的每个体系执行固定中文召回词检索；召回词由当天体系自动生成并覆盖常用简称，按发布时间翻页到观察窗口起点。",
       "critical": true,
       "method_order": ["site_search_sorted_by_date"]
     },

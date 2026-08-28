@@ -5,7 +5,7 @@
 ## 每日顺序
 
 1. 逐一核验 9 个用户指定的 B站账号。采集器先读取账号投稿接口；遇到 412、-799 等限制时，自动改用站内视频检索，并且只接受完全一致的数字 UID。每个账号都要写入来源状态、内容复核状态、时间、方法、证据链接和最新结果；短时外部阻断可沿用 24 小时内的已核验缓存，但必须明确标记缓存方法。
-2. 对观察窗口内的每条 B站候选做内容分类。已映射到具体卡组观察的视频才能计作卡组传播；赛事、全卡点评、直播回放等非卡组内容必须排除；其余候选保持 `pending`，使推荐闸门降级，而不能自动判成“有扩散”或“无更新”。随后执行 B站全站主题检索，对当日 `meta_presence` 与所有候选体系逐一搜索中文名和别名。账号检索用于发现主播推动，关键词检索用于发现名单外扩散，两者缺一不可。
+2. 对观察窗口内的每条 B站候选做内容分类。已映射到具体卡组观察的视频才能计作卡组传播；赛事、全卡点评、直播回放等非卡组内容必须排除；其余候选保持 `pending`，使推荐闸门降级，而不能自动判成“有扩散”或“无更新”。随后做两层全站检索：先以“影之诗 超凡世界”按发布时间翻页到观察窗口起点，发现名单外体系；再从当天 `meta_presence` 与候选构筑自动生成逐体系清单，逐项使用固定中文召回词搜索。任何体系缺失、没有翻到截止点或内容未复核，`bili_search_archetypes` 都不得为 `verified`。账号检索用于发现主播推动，全站检索用于测量名单外扩散，两者缺一不可。
 3. 执行 X 日文、英文 `Latest` 查询，并把 `config/sources.json` 中未过期的固定与动态账号合并为精确 `from:` 查询。有 Bearer Token 时使用官方 Recent Search，只有翻页到末尾且没有未解决错误才记为 `verified`。无 Token 时默认操控已登录浏览器：记录固定查询、可见结果、帖子 ID，并将账号联合查询滚动到观察窗口起点；这条通道记为“登录态有界检索”，不得冒充 API 全量分页。只有浏览器无法访问或未达到固定截止条件时才记为 `partial/blocked`。
 4. 对 X 候选按 Post ID 去重并复核正文、构筑图片、连胜口径和转载链。已映射证据、卡组候选、克制候选、无关内容和转载必须明确分类；任何 `pending` 候选都会继续关闭推荐闸门。
 5. 对候选构筑核验可复制的具体 40 张；官网牌组页只证明牌表，不证明连胜、热度或克制。
@@ -26,11 +26,19 @@
 ```powershell
 python -m yzs_daily fetch-bili `
   --sources config\sources.json `
+  --queries config\queries.json `
   --workflow config\daily-workflow.json `
   --snapshot data\daily\2026-08-28.json `
   --output data\raw\bilibili-2026-08-28-latest.json `
   --since 2026-08-27T00:00:00+08:00 `
   --update-snapshot
+
+# 公共搜索触发风控时，由已登录浏览器完成同一计划并导入
+python -m yzs_daily import-bili-browser `
+  --capture data\raw\bilibili-browser-2026-08-28-latest.json `
+  --queries config\queries.json `
+  --workflow config\daily-workflow.json `
+  --snapshot data\daily\2026-08-28.json
 
 python -m yzs_daily fetch-x `
   --queries config\queries.json `
@@ -55,4 +63,4 @@ python scripts\validate_daily_workflow.py `
 .\scripts\publish_dashboard.ps1 -Date 2026-08-28 -Push
 ```
 
-发布脚本默认先运行 B站逐 UID 采集，再运行三项 X 采集，最后执行同一质量校验。有 `X_BEARER_TOKEN` 时走官方 API；没有时默认导入 `data/raw/x-browser-日期-latest.json`，该文件由已登录浏览器固定检索生成。只有离线重放一份已经采集完毕的快照时才使用 `-SkipBilibiliCollect -SkipXCollect`。缺失任何固定检查项、API翻页未完成、浏览器未达到截止条件、账号 UID 不一致、覆盖数字与逐项审计不一致，都会阻止推荐或中止构建。
+发布脚本默认先运行 B站逐 UID、主题宽搜和逐体系采集，再运行三项 X 采集，最后执行同一质量校验。B站公共搜索受限时导入 `data/raw/bilibili-browser-日期-latest.json`；X 有 `X_BEARER_TOKEN` 时走官方 API，没有时导入 `data/raw/x-browser-日期-latest.json`。两份浏览器文件都必须由已登录浏览器按机器生成计划检索。只有离线重放一份已经采集完毕的快照时才使用 `-SkipBilibiliCollect -SkipXCollect`。缺失任何固定检查项、未翻到观察窗口起点、当天体系清单漏项、账号 UID 不一致、覆盖数字与逐项审计不一致，都会阻止推荐或中止构建。
