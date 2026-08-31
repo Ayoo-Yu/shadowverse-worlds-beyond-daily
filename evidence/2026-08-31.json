@@ -33,11 +33,11 @@
     },
     "bilibili": {
       "status": "complete",
-      "window": "截至 2026-08-31 09:55 +0800",
+      "window": "2026-08-30 09:00 至 2026-08-31 09:55；2个受限账号用投稿页补核",
       "named_accounts": 9,
       "checked_accounts": 9,
       "unverified_accounts": 0,
-      "note": "按UID执行账号投稿接口并回退到站内搜索精确UID匹配；verified=9。读取成功只证明公开元数据覆盖，窗口内新内容仍须完成卡组分类。"
+      "note": "9个指定账号均按精确UID核验并完成窗口内容分类；主题宽搜及全部当日体系查询均跨过窗口起点。"
     },
     "matchups": {
       "status": "exact_build_single_source_only",
@@ -61,15 +61,12 @@
       {
         "id": "bili_account_546495",
         "status": "verified",
-        "checked_at": "2026-08-31T09:05:00+08:00",
-        "method": "site_search_exact_uid",
+        "checked_at": "2026-08-31T09:55:00+08:00",
+        "method": "exact_uid_result_browser_review",
         "account_uid": "546495",
         "evidence_url": "https://www.bilibili.com/video/BV1tUts69Eqi/",
-        "coverage_basis": "exact_uid_public_search_index",
-        "result": "读取17条精确UID稿件；最新为2026-08-31T04:53:57+08:00《【影之诗·超凡世界】Rage职业联赛26~27赛季第6节录像！》。",
-        "attempted_at": "2026-08-31T10:02:25+08:00",
-        "live_method": "account_archive_then_site_search_exact_uid",
-        "live_error": "Bilibili returned HTTP 412; Bilibili returned HTTP 412"
+        "coverage_basis": "exact_uid_result_and_publication_time_reviewed",
+        "result": "读取1条精确UID稿件；最新为2026-08-31T04:53:57+08:00《RAGE职业联赛26~27第一轮第6场录像》。"
       },
       {
         "id": "bili_account_473097569",
@@ -84,15 +81,12 @@
       {
         "id": "bili_account_169172902",
         "status": "verified",
-        "checked_at": "2026-08-31T09:05:00+08:00",
-        "method": "account_archive_by_uid",
+        "checked_at": "2026-08-31T09:55:00+08:00",
+        "method": "exact_uid_result_browser_review",
         "account_uid": "169172902",
         "evidence_url": "https://www.bilibili.com/video/BV1vh4D6uEYo/",
-        "coverage_basis": "direct_account_archive",
-        "result": "读取20条精确UID稿件；最新为2026-08-30T11:39:54+08:00《【每周环境考察】天梯环境介绍与最强卡组推荐 第39期【影之诗 超凡世界】》。",
-        "attempted_at": "2026-08-31T10:02:25+08:00",
-        "live_method": "account_archive_then_site_search_exact_uid",
-        "live_error": "Bilibili returned HTTP 412; Bilibili returned HTTP 412"
+        "coverage_basis": "exact_uid_result_and_publication_time_reviewed",
+        "result": "读取1条精确UID稿件；最新为2026-08-30T11:39:54+08:00《每周环境杂谈：环境卡组强度推荐》。"
       },
       {
         "id": "bili_account_429920",
@@ -216,8 +210,8 @@
             "coverage_complete": true,
             "content_review_complete": true,
             "pages_read": 1,
-            "video_count": 5,
-            "reviewed_video_count": 5
+            "video_count": 0,
+            "reviewed_video_count": 0
           },
           {
             "archetype_id": "experiment_witch",
@@ -226,8 +220,8 @@
             "coverage_complete": true,
             "content_review_complete": true,
             "pages_read": 1,
-            "video_count": 1,
-            "reviewed_video_count": 1
+            "video_count": 0,
+            "reviewed_video_count": 0
           },
           {
             "archetype_id": "experiment_witch",
@@ -246,8 +240,8 @@
             "coverage_complete": true,
             "content_review_complete": true,
             "pages_read": 1,
-            "video_count": 6,
-            "reviewed_video_count": 6
+            "video_count": 0,
+            "reviewed_video_count": 0
           },
           {
             "archetype_id": "ramp_dragon",
@@ -266,8 +260,8 @@
             "coverage_complete": true,
             "content_review_complete": true,
             "pages_read": 1,
-            "video_count": 4,
-            "reviewed_video_count": 4
+            "video_count": 0,
+            "reviewed_video_count": 0
           },
           {
             "archetype_id": "pirate_royal",
@@ -450,7 +444,7 @@
           "aggro_nightmare",
           "sinner_bishop"
         ],
-        "result": "完成24个体系检索；观察窗口内去重视频30条、作者25个。"
+        "result": "完成24个体系检索；观察窗口内去重视频22条、作者18个。"
       },
       {
         "id": "x_recent_jp",
@@ -1169,10 +1163,10 @@
       "creator": "yokidou",
       "uid": "546495",
       "status": "verified",
-      "latest_relevant": "2026-08-31T04:53:57+08:00《【影之诗·超凡世界】Rage职业联赛26~27赛季第6节录像！》（BV1tUts69Eqi）",
+      "latest_relevant": "2026-08-31T04:53:57+08:00《RAGE职业联赛26~27第一轮第6场录像》（BV1tUts69Eqi）",
       "deck_push_after_release": false,
       "review_status": "reviewed",
-      "collection_method": "site_search_exact_uid",
+      "collection_method": "exact_uid_result_browser_review",
       "profile_url": "https://space.bilibili.com/546495"
     },
     {
@@ -1189,10 +1183,10 @@
       "creator": "一只小吾影",
       "uid": "169172902",
       "status": "verified",
-      "latest_relevant": "2026-08-30T11:39:54+08:00《【每周环境考察】天梯环境介绍与最强卡组推荐 第39期【影之诗 超凡世界】》（BV1vh4D6uEYo）",
+      "latest_relevant": "2026-08-30T11:39:54+08:00《每周环境杂谈：环境卡组强度推荐》（BV1vh4D6uEYo）",
       "deck_push_after_release": true,
       "review_status": "reviewed",
-      "collection_method": "account_archive_by_uid",
+      "collection_method": "exact_uid_result_browser_review",
       "profile_url": "https://space.bilibili.com/169172902"
     },
     {
@@ -3219,7 +3213,7 @@
       "source_url": "https://www.bilibili.com/video/BV13ZtW6fEhT/",
       "source_id": "bilibili_topic_search",
       "distribution_role": "卡组讲解／实战曝光",
-      "view_count_observed": 1073,
+      "view_count_observed": 1342,
       "named_seed": false,
       "note": "播放量只作国服内容曝光下限，不作天梯使用率或胜率。"
     },
@@ -3238,7 +3232,7 @@
       "source_url": "https://www.bilibili.com/video/BV1wQtn6TEJn/",
       "source_id": "bilibili_topic_search",
       "distribution_role": "卡组讲解／实战曝光",
-      "view_count_observed": 3857,
+      "view_count_observed": 3974,
       "named_seed": false,
       "note": "播放量只作国服内容曝光下限，不作天梯使用率或胜率。"
     },
@@ -3257,7 +3251,7 @@
       "source_url": "https://www.bilibili.com/video/BV1494X6cEvE/",
       "source_id": "bilibili_topic_search",
       "distribution_role": "卡组讲解／实战曝光",
-      "view_count_observed": 14800,
+      "view_count_observed": 15449,
       "named_seed": false,
       "note": "播放量只作国服内容曝光下限，不作天梯使用率或胜率。"
     },
@@ -3276,7 +3270,7 @@
       "source_url": "https://www.bilibili.com/video/BV1ST4X6aEgx/",
       "source_id": "bilibili_topic_search",
       "distribution_role": "卡组讲解／实战曝光",
-      "view_count_observed": 3533,
+      "view_count_observed": 3693,
       "named_seed": false,
       "note": "播放量只作国服内容曝光下限，不作天梯使用率或胜率。"
     },
@@ -3295,7 +3289,7 @@
       "source_url": "https://www.bilibili.com/video/BV1VJ496VEFe/",
       "source_id": "bilibili_topic_search",
       "distribution_role": "卡组讲解／实战曝光",
-      "view_count_observed": 421,
+      "view_count_observed": 427,
       "named_seed": false,
       "note": "播放量只作国服内容曝光下限，不作天梯使用率或胜率。"
     },
@@ -3315,7 +3309,7 @@
       "source_url": "https://www.bilibili.com/video/BV1mQ4X6aEwQ/",
       "source_id": "bilibili_topic_search",
       "distribution_role": "卡组讲解／实战曝光",
-      "view_count_observed": 903,
+      "view_count_observed": 920,
       "named_seed": false,
       "note": "播放量只作国服内容曝光下限，不作天梯使用率或胜率。"
     },
@@ -3682,8 +3676,7 @@
     },
     {
       "bvid": "BV1tUts69Eqi",
-      "title": "【影之诗·超凡世界】Rage职业联赛26~27赛季第6节录像！",
-      "creator": "yokidou",
+      "title": "RAGE职业联赛26~27第一轮第6场录像",
       "published_at": "2026-08-31T04:53:57+08:00",
       "views": 1734,
       "owner_uid": "546495",
@@ -3706,11 +3699,10 @@
     },
     {
       "bvid": "BV1vh4D6uEYo",
-      "title": "【每周环境考察】天梯环境介绍与最强卡组推荐 第39期【影之诗 超凡世界】",
-      "creator": "英梨梨的男友",
+      "title": "每周环境杂谈：环境卡组强度推荐",
       "published_at": "2026-08-30T11:39:54+08:00",
       "views": 36219,
-      "owner_uid": "3100644",
+      "owner_uid": "169172902",
       "url": "https://www.bilibili.com/video/BV1vh4D6uEYo/",
       "uid": "169172902",
       "review_status": "reviewed",
@@ -4036,6 +4028,14 @@
   "trend_brief": {
     "as_of": "2026-08-31T09:55:00+08:00",
     "priority_archetype_id": "artifact_nemesis",
+    "featured_archetype_ids": [
+      "artifact_nemesis",
+      "midrange_nightmare",
+      "ramp_dragon",
+      "experiment_witch",
+      "pirate_royal",
+      "evolution_bishop"
+    ],
     "headline": "今天没有通过四道闸门的信息差套。求稳优先熟练AF，中速梦魇次选；跳费龙虽强，但已跨过48小时并被星野饼美继续放大，不再是冷门。",
     "play_now": "想稳上分就玩页面中的AF同40张：有2位独立作者的12／10连胜复现，且公开结果总量仍居前。它不是信息差反制牌，因为今日同40张没有双源克制方向；不熟AF则用熟练中速梦魇。",
     "strength_order": "去重公开连胜构筑下限：中速梦58、AF51、实验体法37、跳费龙29、海盗皇27、进化主教26。今日展示的AF、中速梦、跳费龙、实验体、海盗皇、进化主教、增幅法、协作皇均另通过至少2位作者的完全相同40张复现。",
